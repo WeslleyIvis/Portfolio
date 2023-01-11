@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;700&display=swap');
+
+:root {
+    --width-page: 1440px;
+    --body-color: rgba(24, 26, 25, 1);
+    --color-nav: rgba(3, 3, 3, 0.2);
+    --bg-black:rgba(17, 17, 17, 1);
+    --bg-cinza: rgba(20, 20, 20, 1);
+    --color-blue: rgba(75, 126, 255, 1);
+    --font-heebo: 'Heebo', sans-serif;
+    --font-text:  sans-serif;
+    --font-text-color: rgba(255, 255, 255, 1)
+}
+
+
