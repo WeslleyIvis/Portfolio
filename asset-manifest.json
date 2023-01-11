@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/WeslleyIvis/Portfolio.git/static/css/main.7c584df5.css",
-    "main.js": "/WeslleyIvis/Portfolio.git/static/js/main.b7093339.js",
+    "main.css": "/WeslleyIvis/Portfolio.git/static/css/main.d76a9c0f.css",
+    "main.js": "/WeslleyIvis/Portfolio.git/static/js/main.8d069068.js",
     "index.html": "/WeslleyIvis/Portfolio.git/index.html",
-    "main.7c584df5.css.map": "/WeslleyIvis/Portfolio.git/static/css/main.7c584df5.css.map",
-    "main.b7093339.js.map": "/WeslleyIvis/Portfolio.git/static/js/main.b7093339.js.map"
+    "main.d76a9c0f.css.map": "/WeslleyIvis/Portfolio.git/static/css/main.d76a9c0f.css.map",
+    "main.8d069068.js.map": "/WeslleyIvis/Portfolio.git/static/js/main.8d069068.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c584df5.css",
-    "static/js/main.b7093339.js"
+    "static/css/main.d76a9c0f.css",
+    "static/js/main.8d069068.js"
   ]
 }
