@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WeslleyIvis/Portfolio.git/static/css/main.7c584df5.css",
+    "main.js": "/WeslleyIvis/Portfolio.git/static/js/main.b7093339.js",
+    "index.html": "/WeslleyIvis/Portfolio.git/index.html",
+    "main.7c584df5.css.map": "/WeslleyIvis/Portfolio.git/static/css/main.7c584df5.css.map",
+    "main.b7093339.js.map": "/WeslleyIvis/Portfolio.git/static/js/main.b7093339.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c584df5.css",
+    "static/js/main.b7093339.js"
+  ]
+}
