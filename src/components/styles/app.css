@@ -1,0 +1,6 @@
+@import './rootStyles.css';
+
+
+.body-bg-color {
+    background-color: var(--body-color);
+}
