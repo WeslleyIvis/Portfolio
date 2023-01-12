@@ -55,6 +55,9 @@ const Aboutme = () => {
           tenetur laudantium! Iusto similique qui voluptas corporis, praesentium
           eum recusandae ab autem.
         </p>
+        <p style={{ color: 'orange' }}>
+          OBS: ESTE SITE ESTA EM DESENVOLVIMENTO
+        </p>
         <ul>
           <li>
             <a href="f"> Linkdin</a>
