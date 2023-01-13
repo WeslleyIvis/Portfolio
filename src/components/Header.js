@@ -5,7 +5,7 @@ const header = () => {
   return (
     <header className="content-w-size">
       <Navbar></Navbar>
-      <section className="header-content">
+      <section className="header-content bg-color-black">
         <div className="header-name">
           <h1 className="h1">Weslley Cutrim</h1>
           <p>Web Developer | UX/UI designer</p>
