@@ -38,7 +38,10 @@ const Aboutme = () => {
   }
 
   return (
-    <div style={{ position: 'relative' }} className="about-content">
+    <div
+      style={{ position: 'relative' }}
+      className="content-h-size800px bg-color-black"
+    >
       <LinearGradientImage
         width="700px"
         height="600px"

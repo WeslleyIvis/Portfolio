@@ -8,10 +8,17 @@
     padding: 0;
 }
 
+.h1 {
+    color: var(--font-header-color);
+    font-size: 64px;
+}
+
 h3 {
-    color: orange;
+    color: var(--color-light-blue);
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 10px;
+    font-family: 'Heebo', sans-serif;
 }
 
 a {
@@ -20,12 +27,16 @@ a {
 
 :root {
     --width-page: 1440px;
+    --width-margin: 970px;
+    --height-component: 800px;
+    --height-component1200px: 1200px;
     --center-content: 0 auto;
     --body-color: rgba(24, 26, 25, 1);
     --color-nav: rgba(3, 3, 3, .8);
     --bg-black:rgba(17, 17, 17, 1);
-    --bg-cinza: rgba(20, 20, 20, 1);
+    --bg-black20: rgba(20, 20, 20, 1);
     --color-blue: rgba(75, 126, 255, 1);
+    --color-light-blue: rgb(107, 180, 248);
     --color-blue-transparent: rgba(75, 126, 255, .3);
     --font-heebo: 'Heebo', sans-serif;
     --font-title: 'Bellota Text';
@@ -33,6 +44,32 @@ a {
     --font-text-color: rgba(255, 255, 255, 1);
     --font-header-color: rgba(36, 186, 182, 1);
     --font-size-nav: 14px;
+}
+
+.bg-color-black {
+    background-color: var(--bg-black);
+}
+
+.bg-color-black20 {
+    background-color: var(--bg-black20);
+}
+
+.content-w-size {
+    margin: var(--center-content);
+    max-width: var(--width-page);
+}
+
+.content-h-size800px {
+    height: var(--height-component);
+}
+
+.content-h-size1200px {
+    height: var(--height-component1200px);
+}
+
+.margin-component {
+    margin: 0 auto;
+    width: var(--width-margin);
 }
 
 .button-contact {
@@ -54,19 +91,21 @@ a {
     transition: .3s;
 }
 
-.h1 {
-    color: var(--font-header-color);
-    font-size: 64px;
-}
-
 .text-color {
     color: var(--font-text-color);
 }
 
+/*
+ _                    _           
+| |                  | |          
+| |__   ___  __ _  __| | ___ _ __ 
+| '_ \ / _ \/ _` |/ _` |/ _ \ '__|
+| | | |  __/ (_| | (_| |  __/ |   
+|_| |_|\___|\__,_|\__,_|\___|_|   */
+
 
 .header-content {
     font-family: var(--font-heebo);
-    background: var(--bg-black);
     color: var(--font-header-color);
     position: relative;
     height: 780px;
@@ -93,11 +132,6 @@ a {
     width: 100%;
     height: 100%;
     position: absolute;
-}
-
-.content-w-size {
-    margin: var(--center-content);
-    max-width: var(--width-page);
 }
 
 .header-name {
@@ -166,11 +200,6 @@ a {
 
 /* MAIN About*/
 
-.about-content {
-    height: 800px;
-    background-color: var(--bg-black);
-}
-
 .about-text-position {
     position: absolute;
     z-index: 3;
@@ -181,4 +210,26 @@ a {
 
 .about-text-position ul {
     margin-top: 150px;
+}
+
+
+/* PROJECT */
+
+.section-project {
+    padding-top: 180px;
+    
+}
+
+.line {
+    position: relative;
+}
+
+.line::before {
+    content: ' ';
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    background-color: var(--color-light-blue);
+    left: -5%;
+    top: 50%;
 }
