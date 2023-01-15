@@ -22,36 +22,46 @@ const Projects = () => {
   React.useEffect(() => {
     if (data !== null) {
       data.status === 200
-        ? setSliceData(data.data.slice(0, 6))
+        ? setSliceData(data.data.slice(0, data.data.length))
         : setSliceData(null);
     }
   }, [data]);
 
   if (data === null) return null;
-
+  console.log(data);
   return (
-    <div
-      style={{ color: 'white' }}
-      className="bg-color-black content-h-size1200px"
-    >
-      <section className="margin-component section-project ">
-        {' '}
-        <h3 className="h3 line">Project</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
-          eaque eos doloremque.
-        </p>
+    <div>
+      <section className="margin-component margin-top-project-api ">
         {data.status === 200 ? (
           <div>
             {sliceData ? (
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gridTemplateColumns: '1fr 1fr',
+                  gap: '0 10px',
                 }}
               >
                 {sliceData.map((element) => {
-                  return <div key={element.id}>{element.id}</div>;
+                  return (
+                    <section className="project-block-api" key={element.id}>
+                      <strong style={{ color: 'orange' }}>
+                        {element.name.toUpperCase()}
+                      </strong>
+                      <span>
+                        URL:{' '}
+                        <a href={element.html_url} target="blank">
+                          {element.html_url}
+                        </a>
+                      </span>
+                      <span>
+                        Data de criação:{' '}
+                        {Intl.DateTimeFormat('pt-br').format(
+                          new Date(element.created_at),
+                        )}
+                      </span>
+                    </section>
+                  );
                 })}
               </div>
             ) : (

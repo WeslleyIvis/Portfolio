@@ -25,6 +25,10 @@ a {
     color: var(--color-blue);
 }
 
+p, span {
+    color: white;
+}
+
 :root {
     --width-page: 1440px;
     --width-margin: 970px;
@@ -70,6 +74,10 @@ a {
 .margin-component {
     margin: 0 auto;
     width: var(--width-margin);
+}
+
+.padding-top-150 {
+    padding-top: 150px
 }
 
 .button-contact {
@@ -215,9 +223,26 @@ a {
 
 /* PROJECT */
 
-.section-project {
-    padding-top: 180px;
-    
+.margin-top-project-api {
+    padding-top: 30px;  
+}
+
+.project-content-api {
+    display: 'grid';
+    grid-template-columns: '1fr 1fr';
+    gap: '0 10px',
+}
+
+.project-block-api {
+    background: var(--color-nav);
+    padding: 20px 0;
+    margin: 10px 0;
+    border-radius: 5px
+}
+
+.project-block-api span, strong {
+    display: block;
+    margin: 10px 0 0 20px;
 }
 
 .line {

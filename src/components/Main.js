@@ -1,6 +1,6 @@
 import React from 'react';
 import Aboutme from './Aboutme';
-import Projects from './Projects';
+import Projects from './comp-project/Project';
 
 const Main = () => {
   return (
