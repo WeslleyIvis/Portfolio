@@ -1,4 +1,5 @@
 import React from 'react';
+import MainProjects from './MainProjects';
 import ReposAPI from './ReposAPI';
 
 const Project = () => {
@@ -14,8 +15,8 @@ const Project = () => {
   }
 
   return (
-    <div className="bg-color-black ">
-      <div className="margin-component padding-top-150">
+    <div className="bg-color-black padding-top-150">
+      <div className="margin-component ">
         <h3 className="h3 line">Project</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
@@ -25,7 +26,9 @@ const Project = () => {
           {buttonText}
         </button>
 
-        <div>{project === false ? <div></div> : <ReposAPI />}</div>
+        <div>
+          {project === false ? <MainProjects data={1} /> : <ReposAPI />}
+        </div>
       </div>
     </div>
   );

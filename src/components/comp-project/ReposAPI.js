@@ -28,7 +28,6 @@ const Projects = () => {
   }, [data]);
 
   if (data === null) return null;
-  console.log(data);
   return (
     <div>
       <section className="margin-component margin-top-project-api ">
