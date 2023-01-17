@@ -1,5 +1,5 @@
 import React from 'react';
-import { Octokit } from 'https://cdn.skypack.dev/@octokit/core';
+import { Octokit } from 'octokit';
 
 const Projects = () => {
   const [data, setData] = React.useState(null);
