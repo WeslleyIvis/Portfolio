@@ -16,7 +16,7 @@ const Project = () => {
 
   return (
     <div className="bg-color-black padding-top-150">
-      <div className="margin-component ">
+      <div>
         <h3 className="h3 line">Project</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet

@@ -1,68 +1,80 @@
 import React from 'react';
-import macroImg from './img/macro.png';
-import kirbyImg from './img/kirbyGame.png';
-import calcImg from './img/calculator.png';
-import sitejsImg from './img/sitejs.png';
-import gridImg from './img/grid.png';
 
-const element = [
+const projects = [
   {
-    title: 'Macro',
-    img: macroImg,
-    lang: ['Python'],
-    link: 'https://github.com/WeslleyIvis/Macro',
+    name: 'Macro',
+    descri:
+      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
   },
   {
-    title: 'Kirby Game',
-    img: kirbyImg,
-    lang: ['JS', 'P5', 'CSS', 'HTML'],
-    link: 'https://weslleyivis.github.io/P5_Game/',
+    name: 'Kirby Game',
+    descri:
+      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
   },
   {
-    title: 'Calculator',
-    img: calcImg,
-    lang: ['JS', 'CSS', 'HTML'],
-    link: 'https://weslleyivis.github.io/Calculator/',
+    name: 'Aniamis Fantasticos',
+    descri:
+      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
   },
   {
-    title: 'Site js',
-    img: sitejsImg,
-    lang: ['JS', 'HTML', 'CSS'],
-    link: 'https://weslleyivis.github.io/SiteJS/',
+    name: 'Calculator',
+    descri:
+      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
   },
   {
-    title: 'Grid-Layout',
-    img: gridImg,
-    lang: ['HTML', 'CSS'],
-    link: 'https://weslleyivis.github.io/Grid-Layout/',
+    name: 'Grid-Layout',
+    descri:
+      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
   },
 ];
 
 const MainProjects = () => {
+  const [teste, setTeste] = React.useState(0);
+
+  function somar(index) {
+    setTeste(index);
+    console.log(teste);
+  }
+
   return (
-    <div className="main-projects">
-      {element.map((element) => {
-        return (
-          <div key={element.title} className="bg-color-project">
-            <div>
-              {' '}
-              <a href={element.link} target="blank">
-                {' '}
-                <img src={element.img} alt={element.title} />
-              </a>
-            </div>
-            <div className="descrition-main-project">
-              <h4 className="title-main-project">{element.title}</h4>
-              <span>
-                {element.lang.map((lang) => {
-                  return <span key={lang}> | {lang}</span>;
-                })}
-              </span>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+    <section style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+      <div>
+        <h3>
+          The <br></br> Project
+        </h3>
+        <div>
+          {projects.map((element, index) => {
+            return (
+              <div
+                onClick={() => somar(index)}
+                key={element.name}
+                style={{
+                  display: 'flex',
+                  gap: '35px',
+                  marginBottom: '20px',
+                  cursor: 'pointer',
+                }}
+              >
+                <div
+                  style={{
+                    width: '100px',
+                    height: '100px',
+                    background: 'lightblue',
+                  }}
+                ></div>
+                <div style={{ width: '300px' }}>
+                  <h3>{element.name}</h3>
+                  <span>{element.descri}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h3>{projects[teste].name}</h3>
+      </div>
+    </section>
   );
 };
 
