@@ -9,70 +9,58 @@ const projects = [
   {
     name: 'Kirby Game',
     descri:
-      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere nam iusto ipsam hic, itaque repudiandae mollitia magnam, molestias aspernatur quaerat saepe sint nobis provident, iure aut ipsum perferendis impedit!',
   },
   {
     name: 'Aniamis Fantasticos',
     descri:
-      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam itaque maxime nesciunt architecto officiis quod perferendis placeat enim, dolor blanditiis? Sunt fuga vel molestiae quis non cumque tenetur natus.',
   },
   {
     name: 'Calculator',
     descri:
-      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
+      '      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia ipsum sequi blanditiis! Ut laudantium placeat quam, dolores tempore labore, laboriosam sequi veritatis architecto vel esse alias eligendi soluta consequatur?',
   },
   {
     name: 'Grid-Layout',
     descri:
-      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam molestias porro consectetur officiis. Ab aperiam commodi tempore placeat, obcaecati soluta aspernatur rerum culpa sed ipsam quam suscipit nemo dignissimos!',
   },
 ];
 
 const MainProjects = () => {
-  const [teste, setTeste] = React.useState(0);
-
-  function somar(index) {
-    setTeste(index);
-    console.log(teste);
-  }
+  const [content, setContent] = React.useState(0);
 
   return (
-    <section style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-      <div>
-        <h3>
-          The <br></br> Project
-        </h3>
+    <section className="grid-column-repeat-2">
+      <div className="grid-j-self-end">
+        <h3>Project</h3>
         <div>
           {projects.map((element, index) => {
             return (
               <div
-                onClick={() => somar(index)}
+                onClick={() => setContent(index)}
                 key={element.name}
-                style={{
-                  display: 'flex',
-                  gap: '35px',
-                  marginBottom: '20px',
-                  cursor: 'pointer',
-                }}
+                className="project-elements"
               >
-                <div
-                  style={{
-                    width: '100px',
-                    height: '100px',
-                    background: 'lightblue',
-                  }}
-                ></div>
-                <div style={{ width: '300px' }}>
-                  <h3>{element.name}</h3>
-                  <span>{element.descri}</span>
+                <div className="projects-elements-img"></div>
+                <div className="project-text-width">
+                  <h4>{element.name}</h4>
+                  <span className="max-height-span">{element.descri}</span>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      <div>
-        <h3>{projects[teste].name}</h3>
+      <div className="grid-width ">
+        <h3>{projects[content].name}</h3>
+        <p>{projects[content].descri}</p>
+        <div className="project-img-right"></div>
+        <div>
+          <h4>{projects[content].name}</h4>
+          <span>{projects[content].descri}</span>
+        </div>
       </div>
     </section>
   );

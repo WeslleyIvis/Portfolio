@@ -3,20 +3,21 @@ import MainProjects from './MainProjects';
 import ReposAPI from './ReposAPI';
 
 const Project = () => {
-  const [project, setProject] = React.useState(false);
-  const [buttonText, setButtonText] = React.useState('Projects');
+  // const [project, setProject] = React.useState(false);
+  // const [buttonText, setButtonText] = React.useState('Projects');
 
-  function toggleProject() {
-    project
-      ? setButtonText('Git all Repositories')
-      : setButtonText('Main Projects');
+  // function toggleProject() {
+  //   project
+  //     ? setButtonText('Git all Repositories')
+  //     : setButtonText('Main Projects');
 
-    setProject(!project);
-  }
+  //   setProject(!project);
+  // }
 
   return (
-    <div className="bg-color-black padding-top-150">
-      <div>
+    <div className="bg-color-black padding-150 content-w-size">
+      <MainProjects />
+      {/* <div>
         <h3 className="h3 line">Project</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
@@ -29,7 +30,7 @@ const Project = () => {
         <div>
           {project === false ? <MainProjects data={1} /> : <ReposAPI />}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

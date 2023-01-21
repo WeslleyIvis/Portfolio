@@ -1,9 +1,16 @@
 import React from 'react';
 
 const Aboutme = () => {
+  function handleScroll({ target }) {
+    console.log(target);
+  }
+
   return (
-    <section className="section-about">
-      <div className="about-content-size about-left">
+    <section
+      className="grid-column-repeat-2 bg-color-black padding-150 content-w-size"
+      onClick={(props) => handleScroll(props)}
+    >
+      <div className="grid-width grid-j-self-end">
         <h3>About me</h3>
         <span>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ad
@@ -13,7 +20,7 @@ const Aboutme = () => {
         </span>
         <div className="about-img-left"></div>
       </div>
-      <div className="about-content-size about-right">
+      <div className="grid-width about-right">
         <div className="about-img-right"></div>
         <span>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
