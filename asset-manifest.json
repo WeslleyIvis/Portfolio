@@ -1,18 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.103462ae.css",
-    "main.js": "/Portfolio/static/js/main.442cab34.js",
-    "static/media/kirbyGame.png": "/Portfolio/static/media/kirbyGame.9144cee81e114b708339.png",
-    "static/media/sitejs.png": "/Portfolio/static/media/sitejs.54ab4bd41ff0d5e18563.png",
-    "static/media/grid.png": "/Portfolio/static/media/grid.18d21d2f674845cb1545.png",
-    "static/media/calculator.png": "/Portfolio/static/media/calculator.9423fc933c1fe3506e79.png",
-    "static/media/macro.png": "/Portfolio/static/media/macro.bab15bdd5f0ac146aec2.png",
+    "main.css": "/Portfolio/static/css/main.dee3ae83.css",
+    "main.js": "/Portfolio/static/js/main.dad5af04.js",
     "index.html": "/Portfolio/index.html",
-    "main.103462ae.css.map": "/Portfolio/static/css/main.103462ae.css.map",
-    "main.442cab34.js.map": "/Portfolio/static/js/main.442cab34.js.map"
+    "main.dee3ae83.css.map": "/Portfolio/static/css/main.dee3ae83.css.map",
+    "main.dad5af04.js.map": "/Portfolio/static/js/main.dad5af04.js.map"
   },
   "entrypoints": [
-    "static/css/main.103462ae.css",
-    "static/js/main.442cab34.js"
+    "static/css/main.dee3ae83.css",
+    "static/js/main.dad5af04.js"
   ]
 }
