@@ -29,13 +29,14 @@ const projects = [
 ];
 
 const MainProjects = () => {
+  const teste = React.useRef();
   const [content, setContent] = React.useState(0);
 
   return (
-    <section className="grid-column-repeat-2">
-      <div className="grid-j-self-end">
+    <section className="flex-content">
+      <div className="mobile-overflow">
         <h3>Project</h3>
-        <div>
+        <div className="projects">
           {projects.map((element, index) => {
             return (
               <div
@@ -46,14 +47,14 @@ const MainProjects = () => {
                 <div className="projects-elements-img"></div>
                 <div className="project-text-width">
                   <h4>{element.name}</h4>
-                  <span className="max-height-span">{element.descri}</span>
+                  <span className="max-height-span span">{element.descri}</span>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      <div className="grid-width ">
+      <div className="w-content-flex-item" ref={teste}>
         <h3>{projects[content].name}</h3>
         <p>{projects[content].descri}</p>
         <div className="project-img-right"></div>

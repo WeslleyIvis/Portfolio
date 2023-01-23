@@ -51,18 +51,15 @@
 
 .mask-img {
     position: absolute;
-    width: 1000px;
-    height: 700px;
+    max-width: 100%;
+  
     top: 10%;
     left: 30%;
     z-index: 2;
 }
 
 .img-header {
-    background-image: url('https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    height: 90%;
-    background-size: cover;
-    background-position: 50%;
+    max-width: 100%;
 }
 
 .linear-gradient {
@@ -88,4 +85,10 @@
     top: 10%;
     left: -20px;
     background-color: var(--font-text-color);
+}
+
+@media (max-width: 1280px) {
+    .mask-img {
+        left: 0;
+    }
 }

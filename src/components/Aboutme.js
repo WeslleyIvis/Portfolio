@@ -7,10 +7,10 @@ const Aboutme = () => {
 
   return (
     <section
-      className="grid-column-repeat-2 bg-color-black padding-150 content-w-size"
+      className="flex-content bg-color-black padding-150 content-w-size"
       onClick={(props) => handleScroll(props)}
     >
-      <div className="grid-width grid-j-self-end">
+      <div className="w-content-flex-item">
         <h3>About me</h3>
         <span>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ad
@@ -18,10 +18,20 @@ const Aboutme = () => {
           rerum perferendis reprehenderit nam soluta maiores recusandae dolorum.
           Doloremque, quam iure.
         </span>
-        <div className="about-img-left"></div>
+        <div className="about-img-left">
+          <img
+            src="https://images.pexels.com/photos/11887826/pexels-photo-11887826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
       </div>
-      <div className="grid-width about-right">
-        <div className="about-img-right"></div>
+      <div className="w-content-flex-item about-right">
+        <div className="about-img-right">
+          <img
+            src="https://images.pexels.com/photos/6250943/pexels-photo-6250943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
         <span>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
           aperiam rerum totam consequatur quisquam, architecto eaque quia maxime

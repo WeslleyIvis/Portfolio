@@ -35,14 +35,7 @@
     top: 50%;
 }
 
-.project-transition {
-    animation: 1s project ;
-}
-
-@keyframes project {
-    0% {background-color: green;}
-    100% {background-color: blue;}
-}
+/* -------------------- */
 
 .project-elements {
     display: flex;
@@ -51,10 +44,11 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
+    width: 90%;
 }
 
 .project-elements:hover {
-    background-color:#f2da246b;
+    background-color:#9fcceb4d;
 }
 
 .projects-elements-img {
@@ -67,7 +61,7 @@
 
 .max-height-span {
     display: block;
-    height: 70px;
+    height: 60px;
     overflow-y: hidden;
 }
 
@@ -76,8 +70,23 @@
 }
 
 .project-img-right {
-    width: 500px;
+    max-width: 100%;
     height: 235px;
     margin: 60px 0 40px 0;
     background-color: lightblue;
+}
+
+
+@media (max-width: 550px) {
+    .mobile-overflow {
+        overflow-x: scroll;
+    }
+
+    .projects {
+        display: flex;
+    }
+
+    .projects .project-elements {
+        margin-right: 20px;
+    }
 }
