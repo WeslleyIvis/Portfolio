@@ -39,13 +39,7 @@
     left: 75px;
 }
 
-@media (max-width: 550px) {
-    .about-right {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 30px 0;
-    }
-
+@media (max-width: 1170px) {
     .about-img-right::after {
         height: 0;
         width: 0;
@@ -53,5 +47,17 @@
     .about-img-right::before {
         height: 0;
         width: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-right {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px 0;
+    }
+
+    .about-img-left, .about-img-right {
+        text-align: center;
     }
 }

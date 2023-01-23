@@ -77,16 +77,22 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
     .mobile-overflow {
-        overflow-x: scroll;
-    }
-
-    .projects {
-        display: flex;
+        overflow-y: scroll;
     }
 
     .projects .project-elements {
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects {
+        display: flex;
+    }
+
+    .mobile-overflow {
+        overflow-x: scroll;
     }
 }

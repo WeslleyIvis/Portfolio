@@ -14,7 +14,7 @@ const header = () => {
         <div className="mask-img">
           <div className="linear-gradient"></div>
           <img
-            src="https://cdna.artstation.com/p/assets/images/images/036/271/504/original/bizarre-beasties-desert.gif?1617197298"
+            src="https://i.imgur.com/8QUudmJ.gif"
             alt=""
             className="img-header"
           ></img>

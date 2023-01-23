@@ -4,6 +4,7 @@
 @import 'header.css';
 @import 'about.css';
 @import 'project.css';
+@import 'skills.css';
 
 * {
     list-style: none;
@@ -47,8 +48,6 @@ p, span {
 :root {
     --width-page: 1440px;
     --width-margin: 970px;
-    --height-component: 800px;
-    --height-component1200px: 1200px;
     --center-content: 0 auto;
     --body-color: rgba(24, 26, 25, 1);
     --color-nav: rgba(3, 3, 3, .8);
@@ -82,13 +81,6 @@ p, span {
     max-width: var(--width-page);
 }
 
-.content-h-size800px {
-    height: var(--height-component);
-}
-
-.content-h-size1200px {
-    height: var(--height-component1200px);
-}
 
 .margin-component {
     margin: 0 auto;
@@ -145,5 +137,21 @@ p, span {
 
     .flex-content {
         gap: 40px;
+    }
+
+    .w-content-flex-item {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .w-content-flex-item {
+        max-width: 300px;
+    }
+}
+ 
+@media (max-width: 700px) {
+    .w-content-flex-item {
+        max-width: 100%;
     }
 }

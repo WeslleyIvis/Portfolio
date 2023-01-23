@@ -33,8 +33,8 @@ const MainProjects = () => {
   const [content, setContent] = React.useState(0);
 
   return (
-    <section className="flex-content">
-      <div className="mobile-overflow">
+    <section className="flex-content ">
+      <div className="mobile-overflow w-content-flex-item">
         <h3>Project</h3>
         <div className="projects">
           {projects.map((element, index) => {
