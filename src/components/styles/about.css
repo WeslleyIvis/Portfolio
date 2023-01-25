@@ -1,9 +1,15 @@
+.about-content {
+    background-color: 252525;
+}
+
 .about-img-left {
     margin-top: 40px;
 }
 
 .about-img-left img {
     max-width: 100%;
+    -webkit-box-shadow: 5px 9px 18px 3px #000000; 
+    box-shadow: 5px 9px 18px 3px #000000;
 }
 
 .about-img-right {
@@ -14,6 +20,8 @@
 .about-img-right img {
     max-width: 100%;
     width: 435px;  
+    -webkit-box-shadow: 5px 9px 18px 3px #000000; 
+    box-shadow: 5px 9px 18px 3px #000000;
 }
 
 .about-img-right::after {

@@ -7,11 +7,11 @@ const Aboutme = () => {
 
   return (
     <section
-      className="flex-content bg-color-black padding-150 content-w-size"
+      className="flex-content about-content padding-150 content-w-size"
       onClick={(props) => handleScroll(props)}
     >
       <div className="w-content-flex-item">
-        <h3>About me</h3>
+        <h2>About me</h2>
         <span>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ad
           voluptates architecto aperiam sunt non, nostrum, deserunt odio velit

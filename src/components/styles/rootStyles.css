@@ -5,6 +5,7 @@
 @import 'about.css';
 @import 'project.css';
 @import 'skills.css';
+@import 'footer.css';
 
 * {
     list-style: none;
@@ -18,7 +19,7 @@ h1 {
     font-size: 64px;
 }
 
-h3 {
+h2 {
     color: white;
     font-size: 24px;
     font-weight: 500;
@@ -26,13 +27,14 @@ h3 {
     font-family: 'Heebo', sans-serif;
 }
 
-h4 {
-   color: white;
-   font-size: 20px; 
-   font-weight: 400;
-   margin-bottom: 5px;
-   font-family: 'Heebo', sans-serif;
+h3 {
+    color: white;
+    font-size: 20px; 
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: 'Heebo', sans-serif;
 }
+
 
 a {
     color: var(--color-blue);
@@ -40,7 +42,7 @@ a {
 
 p, span {
     color: white;
-    font-size: clamp(.8rem, 2.5vw, .9rem);
+    font-size: clamp(.9rem, 2.5vw, 1rem);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -120,7 +122,7 @@ p, span {
 }
 
 .w-content-flex-item {
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .flex-content {
@@ -144,7 +146,7 @@ p, span {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 955px) {
     .w-content-flex-item {
         max-width: 300px;
     }

@@ -1,5 +1,5 @@
 .skills-content {
-    background-color: var(--bg-black);
+    background-color: 252525;
 }
 
 .skills {
@@ -28,6 +28,13 @@
     padding: 30px;
     width: 150px;
     border-radius: 5px;
+}
+
+.skills-items li {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 5px 0;
 }
 
 @media (max-width: 700px) {

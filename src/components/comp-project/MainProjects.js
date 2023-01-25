@@ -1,68 +1,67 @@
 import React from 'react';
 
-const projects = [
-  {
-    name: 'Macro',
-    descri:
-      ' Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?',
-  },
-  {
-    name: 'Kirby Game',
-    descri:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere nam iusto ipsam hic, itaque repudiandae mollitia magnam, molestias aspernatur quaerat saepe sint nobis provident, iure aut ipsum perferendis impedit!',
-  },
-  {
-    name: 'Aniamis Fantasticos',
-    descri:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam itaque maxime nesciunt architecto officiis quod perferendis placeat enim, dolor blanditiis? Sunt fuga vel molestiae quis non cumque tenetur natus.',
-  },
-  {
-    name: 'Calculator',
-    descri:
-      '      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia ipsum sequi blanditiis! Ut laudantium placeat quam, dolores tempore labore, laboriosam sequi veritatis architecto vel esse alias eligendi soluta consequatur?',
-  },
-  {
-    name: 'Grid-Layout',
-    descri:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam molestias porro consectetur officiis. Ab aperiam commodi tempore placeat, obcaecati soluta aspernatur rerum culpa sed ipsam quam suscipit nemo dignissimos!',
-  },
-];
-
 const MainProjects = () => {
   const teste = React.useRef();
+  const [data, setData] = React.useState(null);
   const [content, setContent] = React.useState(0);
+
+  const getData = (setState) => {
+    fetch('data.json', {
+      headers: {
+        'Content-type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then((r) => r.json())
+      .then((json) => setState(json));
+  };
+
+  React.useEffect(() => {
+    getData(setData);
+  }, []);
 
   return (
     <section className="flex-content ">
       <div className="mobile-overflow w-content-flex-item">
-        <h3>Project</h3>
+        <h2>Project</h2>
         <div className="projects">
-          {projects.map((element, index) => {
-            return (
-              <div
-                onClick={() => setContent(index)}
-                key={element.name}
-                className="project-elements"
-              >
-                <div className="projects-elements-img"></div>
-                <div className="project-text-width">
-                  <h4>{element.name}</h4>
-                  <span className="max-height-span span">{element.descri}</span>
+          {data !== null || undefined ? (
+            data.dados.map((element, index) => {
+              return (
+                <div
+                  onClick={() => setContent(index)}
+                  key={element.name}
+                  className="project-elements"
+                >
+                  <div className="projects-elements-img"></div>
+                  <div className="project-text-width">
+                    <h3>{element.name}</h3>
+                    <span className="max-height-span span">
+                      {element.descri}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })
+          ) : (
+            <div>Error</div>
+          )}
         </div>
       </div>
-      <div className="w-content-flex-item" ref={teste}>
-        <h3>{projects[content].name}</h3>
-        <p>{projects[content].descri}</p>
-        <div className="project-img-right"></div>
-        <div>
-          <h4>{projects[content].name}</h4>
-          <span>{projects[content].descri}</span>
+
+      {data !== null || undefined ? (
+        <div className="w-content-flex-item" ref={teste}>
+          <h2>{data.dados[content].name}</h2>
+          <p>{data.dados[content].descri}</p>
+          <div className="project-img-right"></div>
+          <div>
+            <h3>{data.dados[content].name}</h3>
+            <span>{data.dados[content].descri}</span>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div>ERROR</div>
+      )}
     </section>
   );
 };

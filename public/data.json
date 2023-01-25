@@ -1,0 +1,52 @@
+{
+  "dados": [
+    {
+      "name": "Macro",
+      "descri": " Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?"
+    },
+    {
+      "name": "Kirby Game",
+      "descri": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere nam iusto ipsam hic, itaque repudiandae mollitia magnam, molestias aspernatur quaerat saepe sint nobis provident, iure aut ipsum perferendis impedit!"
+    },
+    {
+      "name": "Aniamis Fantasticos",
+      "descri": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam itaque maxime nesciunt architecto officiis quod perferendis placeat enim, dolor blanditiis? Sunt fuga vel molestiae quis non cumque tenetur natus."
+    },
+    {
+      "name": "Calculator",
+      "descri": "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia ipsum sequi blanditiis! Ut laudantium placeat quam, dolores tempore labore, laboriosam sequi veritatis architecto vel esse alias eligendi soluta consequatur?"
+    },
+    {
+      "name": "Grid-Layout",
+      "descri": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam molestias porro consectetur officiis. Ab aperiam commodi tempore placeat, obcaecati soluta aspernatur rerum culpa sed ipsam quam suscipit nemo dignissimos!"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-End",
+      "skill": ["HTML", "CSS", "JavaScript", "Jquery", "React", "Bootstrap"]
+    },
+    {
+      "name": "Back-End",
+      "skill": ["NodeJS", "Python", "Prisma", "Express"]
+    },
+    {
+      "name": "Tools",
+      "skill": [
+        "VsCode",
+        "TypeScript",
+        "Json",
+        "Npm",
+        "Yarn",
+        "Apache Netbeans",
+        "Docker",
+        "Scrum",
+        "Rest API",
+        "PhotoShop",
+        "Corel Draw",
+        "Figma",
+        "Adobe XD"
+      ]
+    }
+  ]
+}
