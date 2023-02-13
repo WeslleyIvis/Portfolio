@@ -20,9 +20,11 @@ const MainProjects = () => {
     getData(setData);
   }, []);
 
+  console.log(data);
+
   return (
-    <section className="flex-content ">
-      <div className="mobile-overflow w-content-flex-item">
+    <section className="flex-content content-w-size">
+      <div className="project-overflow">
         <h2>Project</h2>
         <div className="projects">
           {data !== null || undefined ? (
@@ -33,7 +35,17 @@ const MainProjects = () => {
                   key={element.name}
                   className="project-elements"
                 >
-                  <div className="projects-elements-img"></div>
+                  <div className="projects-elements-img">
+                    <img
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: '50%',
+                      }}
+                      src={require(`${element.logo}`)}
+                      alt=""
+                    />
+                  </div>
                   <div className="project-text-width">
                     <h3>{element.name}</h3>
                     <span className="max-height-span span">
@@ -54,9 +66,31 @@ const MainProjects = () => {
           <h2>{data.dados[content].name}</h2>
           <p>{data.dados[content].descri}</p>
           <div className="project-img-right"></div>
-          <div>
-            <h3>{data.dados[content].name}</h3>
-            <span>{data.dados[content].descri}</span>
+
+          <div className="skills-project">
+            <h3>Skills do projeto</h3>
+            <ul>
+              {data.dados[content].tec.map((element) => {
+                return <li key={element}>{element}</li>;
+              })}
+            </ul>
+            <div className="img-routes">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={data.dados[content].url_git}
+              >
+                <img src={require('./img/logos/github.png')} alt="github" />
+              </a>
+              {data.dados[content].git_pages ? (
+                <a href={data.dados[content].git_pages}>
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/619/619054.png"
+                    alt="foguete"
+                  />
+                </a>
+              ) : null}
+            </div>
           </div>
         </div>
       ) : (

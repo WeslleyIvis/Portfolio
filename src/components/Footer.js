@@ -20,12 +20,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/wesllley_reive/"
-                target="black"
-              >
-                Instagram
-              </a>
+              <a href="https://www.instagram.com/wesllley_reive/">Instagram</a>
             </li>
             <li>
               <a href="https://github.com/WeslleyIvis" target="black">

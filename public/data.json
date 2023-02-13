@@ -1,24 +1,60 @@
 {
   "dados": [
     {
+      "name": "Download Youtube",
+      "descri": "App para fazer download de videos ou musicas do YouTube",
+      "url_git": "https://github.com/WeslleyIvis/App-Download-Music",
+      "git_pages": null,
+      "tec": ["HTML", "CSS", "JavaScript", "Nodejs", "Express", "Handlebars"],
+      "logo": "./img/logos/node.png"
+    },
+    {
       "name": "Macro",
-      "descri": " Fugiat, quaerat! Odit sit recusandae magnam corrupti itaque praesentium, natus unde provident?"
+      "descri": "Macro feito em Python, usando as bibliotecas PySimpleGUI para a interface gráfica e PyAutoGUI para o fundamento do programa. Esse macro consiste em apertar botões em tempo determinado pelo usuario, podendo ter até 4 botões em uso a o mesmo tempo, quando uma ação ocorre, é anúnciado no console do macro o botão precionado e a quantidade de vezes que essa ação já ocorreu",
+      "url_git": "https://github.com/WeslleyIvis/Macro",
+      "git_pages": null,
+      "tec": ["Python"],
+      "logo": "./img/logos/python.png"
+    },
+    {
+      "name": "Portfolio",
+      "descri": "Meu primeiro projeto feito em React, utilizando componentes e hooks basicos, state, effect, ref... ",
+      "url_git": "https://github.com/WeslleyIvis/Portfolio",
+      "git_pages": "https://weslleyivis.github.io/Portfolio/",
+      "tec": ["JavaScript", "React", "CSS", "HTML"],
+      "logo": "./img/logos/react.png"
     },
     {
       "name": "Kirby Game",
-      "descri": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere nam iusto ipsam hic, itaque repudiandae mollitia magnam, molestias aspernatur quaerat saepe sint nobis provident, iure aut ipsum perferendis impedit!"
+      "descri": "Este jogo foi desenvolvido com o auxilio de uma imersão da Alura, usando JS e um framework chamado P5",
+      "url_git": "https://weslleyivis.github.io/P5_Game/",
+      "git_pages": "https://weslleyivis.github.io/P5_Game/",
+      "tec": ["JavaScript", "P5"],
+      "logo": "./img/logos/js.png"
     },
     {
       "name": "Aniamis Fantasticos",
-      "descri": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam itaque maxime nesciunt architecto officiis quod perferendis placeat enim, dolor blanditiis? Sunt fuga vel molestiae quis non cumque tenetur natus."
+      "descri": "Site desenvolvido com Auxilio do curso Origamid | JS, um excelente curso que me deu um grande empurrão em JS",
+      "url_git": "https://weslleyivis.github.io/SiteJS/",
+      "git_pages": "https://weslleyivis.github.io/SiteJS/",
+      "tec": ["JavaScript", "CSS", "HTML"],
+      "logo": "./img/logos/js.png"
     },
     {
       "name": "Calculator",
-      "descri": "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia ipsum sequi blanditiis! Ut laudantium placeat quam, dolores tempore labore, laboriosam sequi veritatis architecto vel esse alias eligendi soluta consequatur?"
+      "descri": "Essa calculadora foi meu primeiro projeto em JavaScript, quando eu não sabia muito bem como desenvolver em JS, foi bem desafiador e me fez perceber coisas simples que fazia com muita dificuldades.",
+      "url_git": "https://weslleyivis.github.io/Calculator/",
+      "git_pages": "https://weslleyivis.github.io/Calculator/",
+      "tec": ["JavaScript", "CSS", "HTML"],
+      "logo": "./img/logos/js.png"
     },
     {
       "name": "Grid-Layout",
-      "descri": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam molestias porro consectetur officiis. Ab aperiam commodi tempore placeat, obcaecati soluta aspernatur rerum culpa sed ipsam quam suscipit nemo dignissimos!"
+      "descri": "Um Site desenvolvido apenas para entender como o display: Grid funciona e como utilziar da melhor forma",
+      "url_git": "https://weslleyivis.github.io/Grid-Layout/",
+      "git_pages": "https://weslleyivis.github.io/Grid-Layout/",
+      "tec": ["CSS", "HTML"],
+      "logo": "./img/logos/css.png"
     }
   ],
   "skills": [
