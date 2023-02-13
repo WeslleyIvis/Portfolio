@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 @import 'header.css';
 @import 'about.css';
@@ -15,12 +14,13 @@
 }
 
 h1 {
-    color: var(--font-header-color);
-    font-size: 64px;
+    color: white;
+    font-size: clamp(2.6em, 64px, 5vw);
+    font-family: 'Heebo', sans-serif;
 }
 
 h2 {
-    color: white;
+    color: rgb(29, 29, 29);
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -28,11 +28,16 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: rgb(15, 15, 15);
     font-size: 20px; 
     font-weight: 400;
     margin-bottom: 5px;
     font-family: 'Heebo', sans-serif;
+}
+
+h4 {
+    font-family: 'Heebo', sans-serif; 
+    color: rgb(230, 230, 230);
 }
 
 
@@ -41,7 +46,7 @@ a {
 }
 
 p, span {
-    color: white;
+    color: rgb(49, 49, 49);
     font-size: clamp(.9rem, 2.5vw, 1rem);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -51,15 +56,14 @@ p, span {
     --width-page: 1440px;
     --width-margin: 970px;
     --center-content: 0 auto;
-    --body-color: rgba(24, 26, 25, 1);
+    --body-color: rgb(248, 248, 248);
     --color-nav: rgba(3, 3, 3, .8);
-    --bg-black:rgba(17, 17, 17, 1);
+    --bg-color:rgba(192, 198, 254, 1);
     --bg-black20: rgba(20, 20, 20, 1);
-    --color-blue: rgba(75, 126, 255, 1);
-    --color-light-blue: rgb(107, 180, 248);
     --color-blue-transparent: rgba(75, 126, 255, .3);
+    --hamburguer: white;
+    --color-blue: rgb(46, 105, 160);
     --font-heebo: 'Heebo', sans-serif;
-    --font-title: 'Bellota Text';
     --font-text:  sans-serif;
     --font-text-color: rgba(255, 255, 255, 1);
     --font-header-color: rgba(36, 186, 182, 1);
@@ -70,19 +74,13 @@ p, span {
     background: var(--body-color);
 }
 
-.bg-color-black {
-    background-color: var(--bg-black);
+.bg-color-header {
+    background-color: var(--bg-color);
 }
 
 .bg-color-black20 {
     background-color: var(--bg-black20);
 }
-
-.content-w-size {
-    margin: var(--center-content);
-    max-width: var(--width-page);
-}
-
 
 .margin-component {
     margin: 0 auto;
@@ -99,7 +97,7 @@ p, span {
     width: 150px;
     height: 40px;
     border-radius: 23px;
-    border: 1px solid var(--color-blue);
+    border: 1px solid white;
     font-family: var(--font-heebo);
     font-size: 16px;
     font-weight: 700;
@@ -108,7 +106,7 @@ p, span {
 }
 
 .button-contact:hover {
-    background-color: var(--color-blue);
+    background-color: rgb(46, 105, 160);
     transition: .3s;
 }
 

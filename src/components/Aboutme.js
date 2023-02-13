@@ -11,7 +11,7 @@ const Aboutme = () => {
       onClick={(props) => handleScroll(props)}
     >
       <div className="w-content-flex-item">
-        <h2>About me</h2>
+        <h2>Sobre mim</h2>
         <span>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ad
           voluptates architecto aperiam sunt non, nostrum, deserunt odio velit

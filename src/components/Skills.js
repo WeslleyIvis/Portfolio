@@ -19,7 +19,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="content-w-size skills-content padding-150">
+    <section className="skills-content padding-150">
       <div className="skills">
         <div className="title-skills">
           <h2>Skills</h2>
