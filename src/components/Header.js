@@ -5,15 +5,17 @@ const header = () => {
   return (
     <header>
       <Navbar></Navbar>
-      <section className="header-content bg-color-header">
+      <section className="header-content bg-color-header flex-content">
         <div className="header-name">
           <h1>Weslley Cutrim</h1>
-          <h4>Web Developer | UX/UI designer</h4>
+          <p>Web Developer | UX/UI designer</p>
           <button className="button-contact">Contact</button>
         </div>
-        <div className="mask-img">
-          <div className="linear-gradient"></div>
-          <img src="" alt="" className="img-header"></img>
+        <div className="bg-image">
+          <img
+            src="https://images.pexels.com/photos/6307824/pexels-photo-6307824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
         </div>
       </section>
     </header>

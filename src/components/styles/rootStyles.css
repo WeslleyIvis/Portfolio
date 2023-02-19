@@ -58,7 +58,7 @@ p, span {
     --center-content: 0 auto;
     --body-color: rgb(248, 248, 248);
     --color-nav: rgba(3, 3, 3, .8);
-    --bg-color:rgba(192, 198, 254, 1);
+    --bg-color:rgb(41, 49, 56);
     --bg-black20: rgba(20, 20, 20, 1);
     --color-blue-transparent: rgba(75, 126, 255, .3);
     --hamburguer: white;
@@ -72,10 +72,6 @@ p, span {
 
 .bg-color-body {
     background: var(--body-color);
-}
-
-.bg-color-header {
-    background-color: var(--bg-color);
 }
 
 .bg-color-black20 {

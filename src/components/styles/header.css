@@ -3,12 +3,16 @@
 */
 
 nav {
-    background: var(--color-nav)
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    z-index: 2;
 }
 
 .navbar {
     font-family: var(--font-heebo);
-    background: var(--color-nav);
+    background: transparent;
     color: var(--font-text-color);
     display: flex;
     justify-content: space-around;
@@ -101,36 +105,47 @@ nav {
     //////---  NAVBAR  ---//////
 */
 
+.bg-color-header {
+    background-color: rgb(98, 168, 233);
+}
+
 .header-content {
+    padding-top: 50px;
     position: relative;
     height: 900px;
+    align-items: center;
 }
 
-.mask-img {
+.header-content .bg-image { 
+    position: relative;
+    
+}
+
+.header-content .bg-image .circle-animation {
+    width: 50px;
+    height: 50px;
     position: absolute;
-    max-width: 100%;
-    top: 10%;
-    left: 30%;
-    z-index: 2;
+    border-radius: 50%;
+    background-color: white;
+    animation: move 10s alternate infinite;
 }
 
-.img-header {
-    max-width: 100%;
+@keyframes move {
+    0% {
+        top: -150px;
+        left: 50px;
+    }
+    100% {top: 150px;}
 }
 
-.linear-gradient {
-    background-image: radial-gradient(rgba(190, 196, 196, 0.123) 20%, transparent 0%, var(--bg-color) 70%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
+@keyframes color-change {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg);}
 }
 
 .header-name {
+    
     font-family: var(--font-title);
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    z-index: 10;
 }
 
 .header-name::before {

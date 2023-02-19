@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="footer-content">
-      <div className="footer-items content-w-size">
+      <div className="footer-items ">
         <div>
           <h3>Contact me</h3>
           <span>weslley_reive@hotmail.com</span>

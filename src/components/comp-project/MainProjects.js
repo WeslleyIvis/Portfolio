@@ -36,15 +36,7 @@ const MainProjects = () => {
                   className="project-elements"
                 >
                   <div className="projects-elements-img">
-                    <img
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        borderRadius: '50%',
-                      }}
-                      src={require(`${element.logo}`)}
-                      alt=""
-                    />
+                    <img src={require(`${element.logo}`)} alt="" />
                   </div>
                   <div className="project-text-width">
                     <h3>{element.name}</h3>

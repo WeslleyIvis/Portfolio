@@ -1,21 +1,26 @@
 .footer-content {
     background-color: black;
     display: flex;
-    padding: 30px;
 }
 
-.footer-content li{
+.footer-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.footer-items h3 {
+    color: white;
+}
+
+.footer-items li{
     color: white;
     font-size: 12px;
     padding: 3px 0;
     font-family: 'Open Sans', sans-serif;
-}
-
-.footer-items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
-    gap: 50px;
 }
 
 @media (max-width: 400px) {
