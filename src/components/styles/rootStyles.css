@@ -14,13 +14,12 @@
 }
 
 h1 {
-    color: white;
+
     font-size: clamp(2.6em, 64px, 5vw);
     font-family: 'Heebo', sans-serif;
 }
 
 h2 {
-    color: rgb(226, 226, 226);
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -28,7 +27,6 @@ h2 {
 }
 
 h3 {
-    color: rgb(204, 204, 204);
     font-size: 20px; 
     font-weight: 400;
     margin-bottom: 5px;
@@ -37,7 +35,6 @@ h3 {
 
 h4 {
     font-family: 'Heebo', sans-serif; 
-    color: rgb(230, 230, 230);
 }
 
 
@@ -46,17 +43,22 @@ a {
 }
 
 p, span {
-    color: rgb(224, 224, 224);
     font-size: clamp(.9rem, 2.5vw, 1rem);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    color: rgb(209, 209, 209);
 }
+
+h1, h2, h3, h4 {
+    color: white;
+}
+
 
 :root {
     --width-page: 1440px;
     --width-margin: 970px;
     --center-content: 0 auto;
-    --body-color: rgb(36, 36, 36);
+    --body-color: rgb(22, 22, 22);
     --color-nav: rgba(3, 3, 3, .8);
     --bg-color:rgb(41, 49, 56);
     --bg-black20: rgba(20, 20, 20, 1);

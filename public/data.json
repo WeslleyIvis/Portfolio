@@ -15,7 +15,8 @@
         "Cors",
         "Sequelize",
         "Handlebars",
-        "MySQL"
+        "MySQL",
+        "API"
       ],
       "img": "./img/nodecrud.png",
       "logo": "./img/logos/node.png"
@@ -32,7 +33,8 @@
         "Nodejs",
         "Express",
         "Cors",
-        "Handlebars"
+        "Handlebars",
+        "API"
       ],
       "img": "./img/dlyoutube.png",
       "logo": "./img/logos/node.png"
@@ -57,10 +59,10 @@
     },
     {
       "name": "Portfolio",
-      "descri": "Em desenvolvimento",
+      "descri": "Você está navengando neste projeto neste momento. Este site ainda esta em desenvolvimento e espero terminar o mais rapido possivel.",
       "url_git": "https://github.com/WeslleyIvis/Portfolio",
       "git_pages": "https://weslleyivis.github.io/Portfolio/",
-      "tec": ["JavaScript", "React", "CSS", "HTML"],
+      "tec": ["JavaScript", "React", "CSS", "HTML", "JSON", "API"],
       "img": null,
       "logo": "./img/logos/react.png"
     },
@@ -104,21 +106,27 @@
   "skills": [
     {
       "name": "Front-End",
-      "skill": ["HTML", "CSS", "JavaScript", "Jquery", "React", "Bootstrap"]
+      "skill": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Jquery",
+        "React",
+        "Bootstrap",
+        "Sass"
+      ]
     },
     {
       "name": "Back-End",
-      "skill": ["NodeJS", "Python", "Prisma", "Express"]
+      "skill": ["NodeJS", "Python", "Prisma", "Express", "Sequelize", "MySQL"]
     },
     {
       "name": "Tools",
       "skill": [
-        "VsCode",
         "TypeScript",
         "Json",
         "Npm",
         "Yarn",
-        "Apache Netbeans",
         "Docker",
         "Scrum",
         "Rest API",

@@ -80,11 +80,11 @@ const MainProjects = () => {
                 rel="noreferrer"
                 href={data.dados[content].url_git}
               >
-                <b>GIT</b>
+                <img src={require('./img/logos/githubwith.png')} alt="" />
               </a>
               {data.dados[content].git_pages ? (
                 <a href={data.dados[content].git_pages}>
-                  <b>GIT PAGES</b>
+                  <img src={require('./img/logos/pageswithe.png')} alt="" />
                 </a>
               ) : null}
             </div>
