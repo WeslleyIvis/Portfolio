@@ -19,10 +19,7 @@ const Aboutme = () => {
           Doloremque, quam iure.
         </span>
         <div className="about-img-left">
-          <img
-            src="https://images.pexels.com/photos/11887826/pexels-photo-11887826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
+          <img src={require('./comp-project/img/eu.jpg')} alt="" />
         </div>
       </div>
       <div className="w-content-flex-item about-right">

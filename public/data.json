@@ -1,12 +1,50 @@
 {
   "dados": [
     {
-      "name": "Download Youtube",
+      "name": "CRUD",
+      "descri": "C: Create | R: Read | U: Update | D: Delete",
+      "url_git": "https://github.com/WeslleyIvis/CRUD-NodeJS",
+      "git_pages": null,
+      "tec": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "Nodejs",
+        "Express",
+        "Cors",
+        "Sequelize",
+        "Handlebars",
+        "MySQL"
+      ],
+      "img": "./img/nodecrud.png",
+      "logo": "./img/logos/node.png"
+    },
+    {
+      "name": "Download Music YT",
       "descri": "App para fazer download de videos ou musicas do YouTube",
       "url_git": "https://github.com/WeslleyIvis/App-Download-Music",
       "git_pages": null,
-      "tec": ["HTML", "CSS", "JavaScript", "Nodejs", "Express", "Handlebars"],
+      "tec": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Nodejs",
+        "Express",
+        "Cors",
+        "Handlebars"
+      ],
+      "img": "./img/dlyoutube.png",
       "logo": "./img/logos/node.png"
+    },
+    {
+      "name": "Canvas Prototypes",
+      "descri": "Prototypes for canvas",
+      "url_git": "https://github.com/WeslleyIvis/Prototypes-Canvas",
+      "git_pages": "https://weslleyivis.github.io/Prototypes-Canvas/",
+      "tec": ["TypeScript"],
+      "img": "./img/canvasproto.gif",
+      "logo": "./img/logos/ts.png"
     },
     {
       "name": "Macro",
@@ -14,14 +52,16 @@
       "url_git": "https://github.com/WeslleyIvis/Macro",
       "git_pages": null,
       "tec": ["Python"],
+      "img": "./img/macro.png",
       "logo": "./img/logos/python.png"
     },
     {
       "name": "Portfolio",
-      "descri": "Meu primeiro projeto feito em React, utilizando componentes e hooks basicos, state, effect, ref... ",
+      "descri": "Em desenvolvimento",
       "url_git": "https://github.com/WeslleyIvis/Portfolio",
       "git_pages": "https://weslleyivis.github.io/Portfolio/",
       "tec": ["JavaScript", "React", "CSS", "HTML"],
+      "img": null,
       "logo": "./img/logos/react.png"
     },
     {
@@ -30,6 +70,7 @@
       "url_git": "https://weslleyivis.github.io/P5_Game/",
       "git_pages": "https://weslleyivis.github.io/P5_Game/",
       "tec": ["JavaScript", "P5"],
+      "img": "./img/kirbyGame.png",
       "logo": "./img/logos/js.png"
     },
     {
@@ -37,7 +78,8 @@
       "descri": "Site desenvolvido com Auxilio do curso Origamid | JS, um excelente curso que me deu um grande empurrão em JS",
       "url_git": "https://weslleyivis.github.io/SiteJS/",
       "git_pages": "https://weslleyivis.github.io/SiteJS/",
-      "tec": ["JavaScript", "CSS", "HTML"],
+      "tec": ["JavaScript", "CSS", "HTML", "WebPack", "Babel"],
+      "img": "./img/sitejs.png",
       "logo": "./img/logos/js.png"
     },
     {
@@ -46,6 +88,7 @@
       "url_git": "https://weslleyivis.github.io/Calculator/",
       "git_pages": "https://weslleyivis.github.io/Calculator/",
       "tec": ["JavaScript", "CSS", "HTML"],
+      "img": "./img/calculator.png",
       "logo": "./img/logos/js.png"
     },
     {
@@ -54,6 +97,7 @@
       "url_git": "https://weslleyivis.github.io/Grid-Layout/",
       "git_pages": "https://weslleyivis.github.io/Grid-Layout/",
       "tec": ["CSS", "HTML"],
+      "img": "./img/grid.png",
       "logo": "./img/logos/css.png"
     }
   ],

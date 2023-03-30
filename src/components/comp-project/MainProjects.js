@@ -20,8 +20,6 @@ const MainProjects = () => {
     getData(setData);
   }, []);
 
-  console.log(data);
-
   return (
     <section className="flex-content content-w-size">
       <div className="project-overflow">
@@ -54,16 +52,26 @@ const MainProjects = () => {
       </div>
 
       {data !== null || undefined ? (
-        <div className="w-content-flex-item" ref={teste}>
+        <div style={{ width: '700px' }} ref={teste}>
           <h2>{data.dados[content].name}</h2>
-          <p>{data.dados[content].descri}</p>
-          <div className="project-img-right"></div>
+          <p className="descrition-project">{data.dados[content].descri}</p>
+          {data.dados[content].img ? (
+            <img
+              src={require(`${data.dados[content].img}`)}
+              alt={`${data.dados[content].name}`}
+              className="project-img-right"
+            ></img>
+          ) : null}
 
           <div className="skills-project">
-            <h3>Skills do projeto</h3>
+            <h2>Main Skills</h2>
             <ul>
               {data.dados[content].tec.map((element) => {
-                return <li key={element}>{element}</li>;
+                return (
+                  <li key={element}>
+                    <p>{element}</p>
+                  </li>
+                );
               })}
             </ul>
             <div className="img-routes">
@@ -72,14 +80,11 @@ const MainProjects = () => {
                 rel="noreferrer"
                 href={data.dados[content].url_git}
               >
-                <img src={require('./img/logos/github.png')} alt="github" />
+                <b>GIT</b>
               </a>
               {data.dados[content].git_pages ? (
                 <a href={data.dados[content].git_pages}>
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/619/619054.png"
-                    alt="foguete"
-                  />
+                  <b>GIT PAGES</b>
                 </a>
               ) : null}
             </div>

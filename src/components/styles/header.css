@@ -105,6 +105,8 @@ nav {
     //////---  NAVBAR  ---//////
 */
 
+
+
 .bg-color-header {
     background-color: rgb(98, 168, 233);
 }
@@ -118,7 +120,11 @@ nav {
 
 .header-content .bg-image { 
     position: relative;
-    
+}
+
+.bg-image img {
+    max-width: 100px;
+    border-radius: 50%;
 }
 
 .header-content .bg-image .circle-animation {

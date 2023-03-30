@@ -12,10 +12,7 @@ const header = () => {
           <button className="button-contact">Contact</button>
         </div>
         <div className="bg-image">
-          <img
-            src="https://images.pexels.com/photos/6307824/pexels-photo-6307824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
+          <img src={require('./comp-project/img/eu.jpg')} alt="" />
         </div>
       </section>
     </header>
