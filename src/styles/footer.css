@@ -1,0 +1,33 @@
+.footer-content {
+    background-color: black;
+    display: flex;
+}
+
+.footer-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.footer-items h3 {
+    color: white;
+}
+
+.footer-items li{
+    color: white;
+    font-size: 12px;
+    padding: 3px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .footer-items {
+        gap: 20px;
+    }
+}
+
+
+

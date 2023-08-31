@@ -1,0 +1,114 @@
+
+.header-content {
+    padding-top: 50px;
+    height: 900px;
+    background-color: white;
+    align-items: center;
+}
+
+.header-content .bg-image { 
+    top: 0;
+    left: 50%;
+    width: 100vw;
+}
+
+.bg-image img{
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/409245aa-9599-4aef-aea7-04ed829d4e23/dcfqi3v-11792c0f-7007-4bbc-896f-ed92e2585fb1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQwOTI0NWFhLTk1OTktNGFlZi1hZWE3LTA0ZWQ4MjlkNGUyM1wvZGNmcWkzdi0xMTc5MmMwZi03MDA3LTRiYmMtODk2Zi1lZDkyZTI1ODVmYjEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.leMDpyxoMoNMJ7kquc4s4TsfnX5JvkDO1Kf4WH2k-zQ');
+    opacity: 0.5;
+    background: cover;
+}
+
+.header-content .bg-image .circle-animation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    animation: move 10s alternate infinite;
+}
+
+.header-name {
+    z-index: 2;
+    font-family: var(--font-title);
+    position: absolute;
+    color: black;
+}
+
+.header-name::before {
+    content: '';
+    height: 80px;
+    width: 1px;
+    top: 10%;
+    left: -20px;
+    background-color: var(--font-text-color);
+}
+
+.header-content .redes {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.header-content .redes img{
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+.header-content .redes img:hover{
+    background-color: rgba(66, 111, 145, 0.2);
+}
+
+@keyframes move {
+    0% {
+        top: -150px;
+        left: 50px;
+    }
+    100% {top: 150px;}
+}
+
+@keyframes change-color {
+    from {
+        filter: hue-rotate(0deg);
+    } to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes color-change {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg);}
+}
+
+
+@media (max-width: 1200px) {
+    .header-content {
+        height: 900px;
+    }
+    
+    .mask-img {
+        left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-content {
+        height: 700px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .navbar, .mask-img {
+        display: none;
+    }
+
+    .header-name {
+        left: 5%;
+    }
+
+
+}
