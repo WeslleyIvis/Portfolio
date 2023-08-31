@@ -1,43 +1,111 @@
 import React from 'react';
 
-const Aboutme = () => {
-  function handleScroll({ target }) {
-    console.log(target);
-  }
+const flexGap = {
+    display: 'flex',
+    gap: '25px',
+    marginTop: '20px',
+};
 
-  return (
-    <section
-      className="flex-content about-content padding-150 content-w-size"
-      onClick={(props) => handleScroll(props)}
-    >
-      <div className="w-content-flex-item">
-        <h2>Sobre mim</h2>
-        <span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ad
-          voluptates architecto aperiam sunt non, nostrum, deserunt odio velit
-          rerum perferendis reprehenderit nam soluta maiores recusandae dolorum.
-          Doloremque, quam iure.
-        </span>
-        <div className="about-img-left">
-          <img src={require('./comp-project/img/eu.jpg')} alt="" />
-        </div>
-      </div>
-      <div className="w-content-flex-item about-right">
-        <div className="about-img-right">
-          <img
-            src="https://images.pexels.com/photos/15169963/pexels-photo-15169963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-        </div>
-        <span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
-          aperiam rerum totam consequatur quisquam, architecto eaque quia maxime
-          illo voluptate dignissimos, amet explicabo, eius aspernatur quam?
-          Quisquam illum asperiores id!
-        </span>
-      </div>
-    </section>
-  );
+const arrowOk = {
+    height: '24px',
+    alignSelf: 'center',
+};
+
+const Aboutme = () => {
+    return (
+        <section className="content-about">
+            <div>
+                <div
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1.2fr 2fr',
+                        paddingBottom: '45px',
+                    }}
+                >
+                    <h1 className="year-number">2</h1>
+                    <span
+                        style={{
+                            fontFamily: 'Poppins',
+                            fontSize: '30px',
+                            fontWeight: '300',
+                            alignSelf: 'center',
+                        }}
+                    >
+                        of working experience as a UI/UX Designer and Web
+                        Developing
+                    </span>
+                </div>
+
+                <div style={{ maxWidth: '524px' }}>
+                    <p className="text">
+                        Lorem ipsum dolor sit amet consectetur. Posuere nam eget
+                        id rhoncus maecenas diam tellus. Nisl at nec viverra
+                        tellus adipiscing ut convallis. Et nulla quam adipiscing
+                        urna consequat nibh lectus nunc.
+                    </p>
+
+                    <ul className="text" style={{ paddingTop: '50px' }}>
+                        <li style={flexGap}>
+                            <img
+                                style={arrowOk}
+                                src={require('../img/verificar.png')}
+                                alt=""
+                            />{' '}
+                            <p>Afordable Prices</p>
+                        </li>
+                        <li style={flexGap}>
+                            {' '}
+                            <img
+                                style={arrowOk}
+                                src={require('../img/verificar.png')}
+                                alt=""
+                            />{' '}
+                            <p>Afordable Prices</p>
+                        </li>
+                        <li style={flexGap}>
+                            {' '}
+                            <img
+                                style={arrowOk}
+                                src={require('../img/verificar.png')}
+                                alt=""
+                            />
+                            <p>Afordable Prices</p>
+                        </li>
+                    </ul>
+
+                    <span
+                        style={{
+                            display: 'flex',
+                            gap: '10px',
+                            marginTop: '50px',
+                        }}
+                    >
+                        <img
+                            src={require('../img/correspondencia.png')}
+                            alt=""
+                        />{' '}
+                        <p style={{ alignSelf: 'center' }}>
+                            weslley_reive@hotmail.com
+                        </p>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div className="elipse-window"></div>
+                <h2>Happy Clients</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Posuere nam eget id
+                    rhoncus maecenas diam tellus.
+                </p>
+                <h2>Projects Completed</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Posuere nam eget id
+                    rhoncus maecenas diam tellus.
+                </p>
+            </div>
+        </section>
+    );
 };
 
 export default Aboutme;
