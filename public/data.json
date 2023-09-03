@@ -1,23 +1,76 @@
-[
-    {
-        "name": "Delivery project",
-        "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-        "img": "https://htmlburger.com/blog/wp-content/uploads/2021/08/best-ux-portfolios-826x464.png",
-        "git_url": "",
-        "web_link": ""
-    },
-    {
-        "name": "Delivery p",
-        "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-        "img": "https://htmlburger.com/blog/wp-content/uploads/2021/08/best-ux-portfolios-826x464.png",
-        "git_url": "",
-        "web_link": ""
-    },
-    {
-        "name": "Delivery ",
-        "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-        "img": "https://htmlburger.com/blog/wp-content/uploads/2021/08/best-ux-portfolios-826x464.png",
-        "git_url": "",
-        "web_link": ""
-    }
-]
+{
+    "projects": [
+        {
+            "name": "Delivery project",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery p",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery psa",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery pdsa",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery ",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "git_url": "",
+            "web_link": ""
+        }
+    ],
+    "skills": [
+        {
+            "skill": [
+                "HTML",
+                "JS",
+                "CSS3",
+                "ReactJS",
+                "Bootstrap",
+                "Jquery",
+                "VueJS",
+                "Vanilla",
+                "API",
+                "TypeScript",
+                "NodeJS",
+                "Express",
+                "JSON",
+                "MongoDB",
+                "Mongoose",
+                "MySQL",
+                "Python",
+                "Java",
+                "PostgreSQL",
+                "UX / UI designer"
+            ],
+            "tools": [
+                "VSCode",
+                "NetBeans",
+                "Figma",
+                "Adobe XD",
+                "PhotoShop",
+                "Corel Draw",
+                "Gimp",
+                "Pacote Office 365",
+                "Aseprite"
+            ]
+        }
+    ]
+}
