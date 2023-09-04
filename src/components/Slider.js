@@ -6,29 +6,42 @@ const Slider = ({ data }) => {
     const slider = React.useRef();
 
     const sliderEvent = (node, index) => {
-        console.dir(node);
-        console.log(window.screen);
-        console.log({ cliX: node.clientX, targetX: node.target.x });
-
         setSlideWidth(() => {
-            slideWidth = node.target.width - node.target.x;
+            slideWidth = node.width - node.x;
             slider.current.style.transform = `translate3d(${slideWidth}px, 0px, 0px)`;
-            console.log(slideWidth);
         });
 
         setActiveNode(index);
     };
 
+    const leftArrowEvent = () => {
+        if (activeNode > 0) {
+            const index = activeNode - 1;
+            sliderEvent(slider.current.childNodes[index].firstChild, index);
+        }
+    };
+
+    const rigthArrowEvent = () => {
+        if (activeNode < data.data.length - 1) {
+            const index = activeNode + 1;
+            sliderEvent(slider.current.childNodes[index].firstChild, index);
+        }
+    };
+
+    const slideElipseEvent = (index) => {
+        sliderEvent(slider.current.childNodes[index].firstChild, index);
+    };
+
     return (
         <section className="grid-section">
-            {data && data ? (
+            {data ? (
                 <div className="slider-wrapper">
                     <ul className="slider" ref={slider}>
-                        {data.map((element, index) => {
+                        {data.data.map((element, index) => {
                             return (
                                 <li
                                     onClick={(event) =>
-                                        sliderEvent(event, index)
+                                        sliderEvent(event.target, index)
                                     }
                                     key={element.name}
                                     className={
@@ -68,21 +81,35 @@ const Slider = ({ data }) => {
                     </ul>
                 </div>
             ) : null}
-            {data ? (
-                <div style={{ paddingBottom: '180px' }}>
+            {data.data ? (
+                <div className="slide-buttons">
                     <div>
-                        {data.map((node) => {
+                        {data.data.map((node, index) => {
                             return (
-                                <span key={node.name} value="">
-                                    O
-                                </span>
+                                <button
+                                    key={node.name}
+                                    className="btn-index-slide"
+                                    onClick={() => slideElipseEvent(index)}
+                                ></button>
                             );
                         })}
-                        <button>SETA </button>
-                        <button>SETA</button>
                     </div>
                 </div>
             ) : null}
+            <div className="btn-controller-slider">
+                <button
+                    className="arrow-button flip"
+                    onClick={() => leftArrowEvent()}
+                >
+                    <img src={require('../img/arrow.png')} alt="arrow" />
+                </button>
+                <button
+                    className="arrow-button"
+                    onClick={() => rigthArrowEvent()}
+                >
+                    <img src={require('../img/arrow.png')} alt="arrow" />
+                </button>
+            </div>
         </section>
     );
 };

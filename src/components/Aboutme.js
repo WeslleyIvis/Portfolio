@@ -13,7 +13,7 @@ const arrowOk = {
 
 const Aboutme = () => {
     return (
-        <section className="content-about">
+        <section className="content-grid">
             <div>
                 <div
                     style={{
@@ -26,7 +26,7 @@ const Aboutme = () => {
                     <span
                         style={{
                             fontFamily: 'Poppins',
-                            fontSize: '30px',
+                            fontSize: 'clamp(16px, 5vw, 30px)',
                             fontWeight: '300',
                             alignSelf: 'center',
                         }}
@@ -36,7 +36,7 @@ const Aboutme = () => {
                     </span>
                 </div>
 
-                <div style={{ maxWidth: '524px' }}>
+                <div mobile="justify-self-c" style={{ maxWidth: '524px' }}>
                     <p className="text">
                         Lorem ipsum dolor sit amet consectetur. Posuere nam eget
                         id rhoncus maecenas diam tellus. Nisl at nec viverra
