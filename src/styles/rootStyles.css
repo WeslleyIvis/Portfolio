@@ -8,8 +8,10 @@
     --content-padding-bottom: 180px;
     --grid-colums: calc(var(--width-content) / 1.8) calc(var(--width-content) / 2.6);
     --grid-gap: 130px;
+    --padding-b-45: 45px;
     --padding-mobile: 0 1em;
     --font-size-nav: 14px;
+    --btn-color: rgba(98, 68, 198, 1);
 }
 
 * {
@@ -26,17 +28,22 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: 500;
-    margin: 20px 0;
+    margin: 1em 0 20px 0;
 }
 
 h3 {
     font-size: 20px; 
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.h1-sub-title {
+    font-size: clamp(30px, 5vw, 45px) !important;
+    padding-bottom: var(--padding-b-45);
 }
 
 p, span {
-    font-size: clamp(.9rem, 2.5vw, 20px);
+    font-size: clamp(1rem, 2.5vw, 20px);
     font-weight: 300;
     font-family: Poppins , sans-serif;
     font-style: normal;
@@ -47,6 +54,8 @@ h1, h2, h3, h4 {
     color: rgb(29, 29, 29);
     font-family: Poppins , sans-serif;
 }
+
+/* ABOUT */
 
 .elipse-window {
     width: 200px;
@@ -66,16 +75,28 @@ h1, h2, h3, h4 {
     gap: 100px;
 }
 
-.content-about, .content-skills {
+.content-grid {
+    max-width: calc(var(--width-content) / 1.8 + var(--width-content) / 2.6 + var(--grid-gap));
     display: grid;
-    grid-template-columns: var(--grid-colums);
-    justify-content: center;
-    gap: var(--grid-gap);
-    padding-bottom: var(--content-padding-bottom);
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 3em 160px 3em;
+    gap: 3em;
+}
+
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .content-grid div[mobile="justify-self-c"] {
+        margin: 0 auto;
+    }
 }
 
 .year-number {
-    font-size: 160px ;
+    font-size: clamp(120px, 10vw, 160px) ;
     font-family:  'Poppins', sans-serif;
     position: relative;
     text-align: center;
@@ -102,6 +123,10 @@ h1, h2, h3, h4 {
     font-weight: 300;
     line-height: normal;
 }
+
+/* ABOUT */
+
+/* SLIDER */
 
 .content-project {
     max-width: calc(var(--width-content) + var(--grid-gap)); 
@@ -135,9 +160,7 @@ h1, h2, h3, h4 {
     background-color: rgb(25, 105, 143);
 }
 
-.grid-section {
-    
-}
+
 
 .slider-wrapper {
     overflow: hidden;    
@@ -200,7 +223,76 @@ h1, h2, h3, h4 {
     to {
         opacity: 1;
        
-    }
-    
+    }   
 }
 
+.slide-buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.btn-index-slide {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(25, 49, 70);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.btn-controller-slider {
+    position: absolute;
+    left: 82.3vw;
+}
+
+.arrow-button {
+    width: 60px;
+    height: 75px;
+    cursor: pointer;
+    background-color: darkcyan;
+    border: none;
+    height: 30xp;
+    outline: none;
+}
+
+.arrow-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.flip img{
+    transform: rotate(180deg)
+}
+
+/* SLIDER */
+
+/* SKILLS */
+
+.buttons-toggle {
+    border: 2px solid violet;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: var(--padding-b-45);
+}
+
+.btn-skill {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--btn-color);
+    font-size: clamp(16px, 5vw, 20px);
+    transition: .5s ease-in;
+    outline: none;
+}
+
+.btn-actived {
+    background-color: var(--btn-color);
+    color: white;
+}
+
+/* SKILLS */
