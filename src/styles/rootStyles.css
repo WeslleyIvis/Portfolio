@@ -5,13 +5,27 @@
 :root {
     --width-page: 1440px;
     --width-content: 1200px;
-    --content-padding-bottom: 180px;
+    --content-padding-bottom: 150px;
     --grid-colums: calc(var(--width-content) / 1.8) calc(var(--width-content) / 2.6);
     --grid-gap: 130px;
-    --padding-b-45: 45px;
-    --padding-mobile: 0 1em;
+    --padding-bottom: clamp(.5px, 2.5vw, 2em);
+    --default-padding: 0 clamp(1em, 5vw, 3em) var(--content-padding-bottom);
     --font-size-nav: 14px;
     --btn-color: rgba(98, 68, 198, 1);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --content-padding-bottom: 50px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr !important;
+    } 
+
+    .content-grid div[mobile="justify-self-c"] {
+        margin: 0 auto;
+    }
 }
 
 * {
@@ -39,11 +53,11 @@ h3 {
 
 .h1-sub-title {
     font-size: clamp(30px, 5vw, 45px) !important;
-    padding-bottom: var(--padding-b-45);
+    padding-bottom: var(--padding-bottom);
 }
 
 p, span {
-    font-size: clamp(1rem, 2.5vw, 20px);
+    font-size: clamp(1rem, 2.5vw, 18px);
     font-weight: 300;
     font-family: Poppins , sans-serif;
     font-style: normal;
@@ -81,18 +95,8 @@ h1, h2, h3, h4 {
     grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 3em 160px 3em;
+    padding: var(--default-padding);
     gap: 3em;
-}
-
-@media (max-width: 1024px) {
-    .content-grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    .content-grid div[mobile="justify-self-c"] {
-        margin: 0 auto;
-    }
 }
 
 .year-number {
@@ -132,8 +136,7 @@ h1, h2, h3, h4 {
     max-width: calc(var(--width-content) + var(--grid-gap)); 
     padding-bottom: var(--content-padding-bottom);
     margin: 0 auto;
-    padding: var(--padding-mobile);
-    height: 900px;
+    padding: var(--default-padding); 
     overflow-y: hidden;
 }
 
@@ -141,7 +144,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: flex-end;
     gap: 80px;
-    margin: 40px 0 120px 0;
+    margin: clamp(10px, 5vw, 40px) 0 clamp(2em, 10vw, 7.5em);
 }
 
 .select-slider li {
@@ -160,8 +163,6 @@ h1, h2, h3, h4 {
     background-color: rgb(25, 105, 143);
 }
 
-
-
 .slider-wrapper {
     overflow: hidden;    
 }
@@ -169,17 +170,18 @@ h1, h2, h3, h4 {
 .slider-wrapper ul {
     transition: .5s;
     display: flex;  
+    
 }
 
 .slider-wrapper ul:first-child {
-    padding-left: 35px;
+    padding-left: clamp(.1em, 1vw, 35px);
 }
 
 .slider-wrapper ul li {
     flex-shrink: 0;
-    width: 80vw;
-    max-width: 500px;
     margin: 0 20px;
+    width: 80vw;
+    max-width: 390px;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,.4);
@@ -202,7 +204,7 @@ h1, h2, h3, h4 {
     padding: 10px;
     transform: .5s;
     display: none;
-    animation: teste 1s ease-in;
+    animation: opacit 1s ease-in;
     width: 100%;
 }
 
@@ -215,7 +217,7 @@ h1, h2, h3, h4 {
     display: block !important;
 }
 
-@keyframes teste {
+@keyframes opacit {
     from {
         opacity: 0;
   
@@ -234,33 +236,41 @@ h1, h2, h3, h4 {
 }
 
 .btn-index-slide {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(25, 49, 70);
+    background-size: cover;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     margin: 0 10px;
+    background-size: cover;
 }
 
 .btn-controller-slider {
     position: absolute;
-    left: 82.3vw;
+    display: flex;
+    gap: 10px;
+    left: 50%;
 }
 
 .arrow-button {
     width: 60px;
-    height: 75px;
+    height: 60px;
+    border-radius: 50%;
     cursor: pointer;
-    background-color: darkcyan;
+    background-color: rgb(39, 103, 185);
     border: none;
     height: 30xp;
     outline: none;
+    text-align: center;
+    
 }
 
 .arrow-button img {
     width: 30px;
     height: 30px;
+    
 }
 
 .flip img{
@@ -275,7 +285,7 @@ h1, h2, h3, h4 {
     border: 2px solid violet;
     display: flex;
     border-radius: 10px;
-    margin-bottom: var(--padding-b-45);
+    margin-bottom: var(--padding-bottom);
 }
 
 .btn-skill {
@@ -294,5 +304,15 @@ h1, h2, h3, h4 {
     background-color: var(--btn-color);
     color: white;
 }
+
+.exp-ed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp-ed div {
+    animation: opacit 1s ease-out;
+}
+
 
 /* SKILLS */
