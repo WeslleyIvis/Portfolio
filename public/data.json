@@ -3,35 +3,49 @@
         {
             "name": "Delivery project",
             "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "img": "/imagens/poke_api.png",
             "git_url": "",
             "web_link": ""
         },
         {
             "name": "Delivery p",
             "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "img": "/imagens/poke_api.png",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery das",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "/imagens/poke_api.png",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery dasdsa",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "/imagens/poke_api.png",
             "git_url": "",
             "web_link": ""
         },
         {
             "name": "Delivery psa",
             "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "img": "/imagens/poke_api.png",
             "git_url": "",
             "web_link": ""
         },
         {
             "name": "Delivery pdsa",
             "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "img": "/imagens/poke_api.png",
             "git_url": "",
             "web_link": ""
         },
         {
             "name": "Delivery ",
             "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
-            "img": "https://cdn.statically.io/img/i.pinimg.com/originals/f6/58/2d/f6582dd02559b2493d6cc6c948f2ff2d.jpg",
+            "img": "/imagens/poke_api.png",
             "git_url": "",
             "web_link": ""
         }
@@ -71,6 +85,52 @@
                 "Pacote Office 365",
                 "Aseprite"
             ]
+        }
+    ],
+    "exp": [
+        {
+            "title": "Dev. Full Stack",
+            "company": "Autonomo",
+            "date": "2023 - NOW",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Professor de informática (Freela)",
+            "company": "Microlins",
+            "date": "2023 - 2023",
+            "descrition": "Ministrava aulas para salas de até 10 alunos, com conteúdo de informática como, pacote office (365) básico à avançado e Windows."
+        },
+        {
+            "title": "Professor de informática (Freela)",
+            "company": "Logus",
+            "date": "2022 - 2022",
+            "descrition": "Ministrava aulas de designer para turmas com até trinta alunos, de diversas faixas etárias. com aulas de PhotoShop, Corel Drawn e Pacote Office (365)"
+        }
+    ],
+    "education": [
+        {
+            "title": "Ciência da Computação",
+            "company": "Universidade Cruzeiro do Sul",
+            "date": "2022 - Now",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Técncias de Algoritmos em (JS) ",
+            "company": "Origamid",
+            "date": "2022 - 2022",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Técnico em informática para internet",
+            "company": "Senai",
+            "date": "2020 - 2022",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Manuntenção de micros",
+            "company": "Senai",
+            "date": "2019 - 2020",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
         }
     ]
 }
