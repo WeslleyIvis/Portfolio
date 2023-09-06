@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = ({ data }) => {
+const Skills = ({ data, exp, education }) => {
     const [toggleBtn, setToggleBtn] = React.useState(0);
 
     const flexSkill = {
@@ -19,7 +19,13 @@ const Skills = ({ data }) => {
 
     return (
         <div className="content-grid">
-            <div style={{ maxWidth: '600px' }}>
+            <div
+                style={
+                    window.innerWidth <= 768
+                        ? { maxWidth: '100%' }
+                        : { maxWidth: '600px' }
+                }
+            >
                 <h1 className="h1-sub-title">Skills & Experience</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -78,44 +84,46 @@ const Skills = ({ data }) => {
                         Education
                     </button>
                 </div>
-                <div
-                    style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                    }}
-                >
-                    <div>
-                        <h3>UI designer</h3>
-                        <p>2022 - 2023</p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.{' '}
-                        </p>
-                    </div>
-                    <div>
-                        <h3>UI designer</h3>
-                        <p>2022 - 2023</p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.{' '}
-                        </p>
-                    </div>
-                    <div>
-                        <h3>UI designer</h3>
-                        <p>2022 - 2023</p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.{' '}
-                        </p>
-                    </div>
-                    <div>
-                        <h3>UI designer</h3>
-                        <p>2022 - 2023</p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.{' '}
-                        </p>
-                    </div>
+                <div className="exp-ed">
+                    {toggleBtn === 0 && exp
+                        ? exp.map((element, index) => {
+                              return (
+                                  <div key={element.title + index}>
+                                      <h2>{element.title}</h2>
+                                      <p>
+                                          <p style={{ fontWeight: '400' }}>
+                                              {element.company} | {element.date}
+                                          </p>
+                                      </p>
+
+                                      <p style={{ fontSize: '16px' }}>
+                                          {element.descrition}
+                                      </p>
+                                  </div>
+                              );
+                          })
+                        : education.map((element, index) => {
+                              return (
+                                  <div
+                                      style={{ padding: '15px 0' }}
+                                      key={element.title + index}
+                                  >
+                                      <h3
+                                          style={{
+                                              fontSize:
+                                                  'clamp(18px, 5vw, 20px)',
+                                              fontWeight: '400',
+                                          }}
+                                      >
+                                          {element.title}
+                                      </h3>
+                                      <span>
+                                          <span>{element.company}</span>
+                                          <p>{element.date}</p>
+                                      </span>
+                                  </div>
+                              );
+                          })}
                 </div>
             </div>
         </div>
