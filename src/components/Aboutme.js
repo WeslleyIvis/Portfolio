@@ -1,3 +1,6 @@
+import verify from '../img/verificar.png';
+import card from '../img/carta.png';
+
 import React from 'react';
 
 const flexGap = {
@@ -44,50 +47,29 @@ const Aboutme = () => {
                         urna consequat nibh lectus nunc.
                     </p>
 
-                    <ul className="text" style={{ paddingTop: '50px' }}>
+                    <ul
+                        className="text"
+                        style={
+                            window.innerWidth > 768
+                                ? { paddingTop: '50px' }
+                                : { paddingTop: '20px' }
+                        }
+                    >
                         <li style={flexGap}>
-                            <img
-                                style={arrowOk}
-                                src={require('../img/verificar.png')}
-                                alt=""
-                            />{' '}
+                            <img style={arrowOk} src={verify} alt="" />{' '}
                             <p>Afordable Prices</p>
                         </li>
                         <li style={flexGap}>
                             {' '}
-                            <img
-                                style={arrowOk}
-                                src={require('../img/verificar.png')}
-                                alt=""
-                            />{' '}
+                            <img style={arrowOk} src={verify} alt="" />{' '}
                             <p>Afordable Prices</p>
                         </li>
                         <li style={flexGap}>
                             {' '}
-                            <img
-                                style={arrowOk}
-                                src={require('../img/verificar.png')}
-                                alt=""
-                            />
+                            <img style={arrowOk} src={verify} alt="" />
                             <p>Afordable Prices</p>
                         </li>
                     </ul>
-
-                    <span
-                        style={{
-                            display: 'flex',
-                            gap: '10px',
-                            marginTop: '50px',
-                        }}
-                    >
-                        <img
-                            src={require('../img/correspondencia.png')}
-                            alt=""
-                        />{' '}
-                        <p style={{ alignSelf: 'center' }}>
-                            weslley_reive@hotmail.com
-                        </p>
-                    </span>
                 </div>
             </div>
 
@@ -103,6 +85,18 @@ const Aboutme = () => {
                     Lorem ipsum dolor sit amet consectetur. Posuere nam eget id
                     rhoncus maecenas diam tellus.
                 </p>
+                <span
+                    style={{
+                        display: 'flex',
+                        gap: '10px',
+                        marginTop: '50px',
+                    }}
+                >
+                    <img src={card} alt="" />{' '}
+                    <p style={{ alignSelf: 'center' }}>
+                        weslley_reive@hotmail.com
+                    </p>
+                </span>
             </div>
         </section>
     );
