@@ -33,7 +33,11 @@ const Main = () => {
             {data ? (
                 <>
                     <Projects data={data.projects} />
-                    <Skills data={data.skills} />
+                    <Skills
+                        data={data.skills}
+                        exp={data.exp}
+                        education={data.education}
+                    />
                 </>
             ) : null}
         </main>
