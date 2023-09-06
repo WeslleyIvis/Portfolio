@@ -1,15 +1,51 @@
 import React from 'react';
+import arrow from '../img/arrow.png';
 
-const Slider = ({ data }) => {
+const Slider = ({ data }, windowWidth) => {
     let [slideWidth, setSlideWidth] = React.useState(null);
     const [activeNode, setActiveNode] = React.useState(1);
     const slider = React.useRef();
 
+    React.useEffect(() => {
+        const handleResize = () => {
+            sliderEvent(
+                slider.current.childNodes[activeNode].firstChild,
+                activeNode,
+            );
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const sliderEvent = (node, index) => {
         setSlideWidth(() => {
-            slideWidth = node.width - node.x;
+            if (index <= 1 && window.innerWidth > 1024) {
+                // Não deixa padding-left para os primeiros cards
+                slideWidth = 0;
+            } else if (
+                index >= slider.current.childNodes.length - 2 &&
+                window.innerWidth > 1024
+            ) {
+                // Não deixa padding-right para os últimos cards
+                slideWidth = node.width * 3 - slider.current.scrollWidth;
+            } else {
+                if (window.innerWidth <= 768) {
+                    slideWidth = node.width - node.x - node.width + 40;
+                } else if (window.innerWidth <= 1024) {
+                    slideWidth = -node.x + 150;
+                } else {
+                    slideWidth =
+                        node.width * 2 + window.innerWidth / node.x - node.x;
+                }
+            }
             slider.current.style.transform = `translate3d(${slideWidth}px, 0px, 0px)`;
         });
+
+        console.dir(slider.current.scrollWidth);
 
         setActiveNode(index);
     };
@@ -40,15 +76,20 @@ const Slider = ({ data }) => {
                         {data.data.map((element, index) => {
                             return (
                                 <li
-                                    onClick={(event) =>
-                                        sliderEvent(event.target, index)
-                                    }
                                     key={element.name}
                                     className={
                                         index === activeNode ? 'active' : ''
                                     }
                                 >
-                                    <img src={element.img} alt="" />
+                                    <img
+                                        onClick={(event) =>
+                                            sliderEvent(event.target, index)
+                                        }
+                                        src={
+                                            process.env.PUBLIC_URL + element.img
+                                        }
+                                        alt=""
+                                    />
                                     <div
                                         className={
                                             index === activeNode
@@ -90,6 +131,22 @@ const Slider = ({ data }) => {
                                     key={node.name}
                                     className="btn-index-slide"
                                     onClick={() => slideElipseEvent(index)}
+                                    style={
+                                        activeNode === index
+                                            ? {
+                                                  backgroundImage: `url('${
+                                                      process.env.PUBLIC_URL +
+                                                      node.img
+                                                  }')`,
+                                              }
+                                            : {
+                                                  backgroundImage: `url('${
+                                                      process.env.PUBLIC_URL +
+                                                      node.img
+                                                  }')`,
+                                                  opacity: '.6',
+                                              }
+                                    }
                                 ></button>
                             );
                         })}
@@ -101,13 +158,13 @@ const Slider = ({ data }) => {
                     className="arrow-button flip"
                     onClick={() => leftArrowEvent()}
                 >
-                    <img src={require('../img/arrow.png')} alt="arrow" />
+                    <img src={arrow} alt="arrow" />
                 </button>
                 <button
                     className="arrow-button"
                     onClick={() => rigthArrowEvent()}
                 >
-                    <img src={require('../img/arrow.png')} alt="arrow" />
+                    <img src={arrow} alt="arrow" />
                 </button>
             </div>
         </section>
