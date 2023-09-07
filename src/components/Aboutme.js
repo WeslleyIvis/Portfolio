@@ -34,17 +34,17 @@ const Aboutme = () => {
                             alignSelf: 'center',
                         }}
                     >
-                        of working experience as a UI/UX Designer and Web
-                        Developing
+                        of working experience as a Web Developing and UI/UX
+                        Designer
                     </span>
                 </div>
 
                 <div mobile="justify-self-c" style={{ maxWidth: '524px' }}>
-                    <p className="text">
-                        Lorem ipsum dolor sit amet consectetur. Posuere nam eget
-                        id rhoncus maecenas diam tellus. Nisl at nec viverra
-                        tellus adipiscing ut convallis. Et nulla quam adipiscing
-                        urna consequat nibh lectus nunc.
+                    <p className="text" style={{ fontSize: '18px' }}>
+                        Sou apaixonado por aprender coisas novas, como aprender
+                        uma nova tecnlogia ou aprender a tocar um estrumento
+                        novo, são essas novas experiências que me fazem ser
+                        alguém melhor a cada dia.
                     </p>
 
                     <ul
@@ -57,39 +57,36 @@ const Aboutme = () => {
                     >
                         <li style={flexGap}>
                             <img style={arrowOk} src={verify} alt="" />{' '}
-                            <p>Afordable Prices</p>
+                            <p>Focado em meus objetivos.</p>
                         </li>
                         <li style={flexGap}>
                             {' '}
                             <img style={arrowOk} src={verify} alt="" />{' '}
-                            <p>Afordable Prices</p>
+                            <p>Aberto para novas experiências.</p>
                         </li>
                         <li style={flexGap}>
                             {' '}
                             <img style={arrowOk} src={verify} alt="" />
-                            <p>Afordable Prices</p>
+                            <p>Ser melhor que ontem.</p>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div>
+            <div
+                style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    alignContent: 'center',
+                }}
+            >
                 <div className="elipse-window"></div>
-                <h2>Happy Clients</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Posuere nam eget id
-                    rhoncus maecenas diam tellus.
-                </p>
-                <h2>Projects Completed</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Posuere nam eget id
-                    rhoncus maecenas diam tellus.
-                </p>
+
                 <span
                     style={{
                         display: 'flex',
                         gap: '10px',
-                        marginTop: '50px',
+                        margin: '0 auto',
                     }}
                 >
                     <img src={card} alt="" />{' '}

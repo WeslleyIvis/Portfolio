@@ -28,10 +28,16 @@ const Skills = ({ data, exp, education }) => {
             >
                 <h1 className="h1-sub-title">Skills & Experience</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur a nihil nam aliquam consectetur possimus architecto
-                    nobis voluptatem placeat, nostrum reiciendis deserunt
-                    facilis, totam voluptas! Vero sit ipsa ipsum soluta.
+                    Tenho experiência abrangente com desenvolvimento Front end,
+                    consumir API's, CSS responsivo, Técnicas de SEO, JS Vannila,
+                    padrões de Single Page Aplication "SPA".
+                    <br />
+                    Tenho conhecimento técnico em UX / UI designer, com
+                    wireframes de baixa e alta fildelidade, prototipagem,
+                    padrões de tipografica, espaçamento e cores.
+                    <br />
+                    Conhecimento com Back end com criação de API, padrões de
+                    banco de dados como "ORM", "ODM".
                 </p>
 
                 <h2>My Skills</h2>
@@ -90,11 +96,11 @@ const Skills = ({ data, exp, education }) => {
                               return (
                                   <div key={element.title + index}>
                                       <h2>{element.title}</h2>
-                                      <p>
+                                      <div>
                                           <p style={{ fontWeight: '400' }}>
                                               {element.company} | {element.date}
                                           </p>
-                                      </p>
+                                      </div>
 
                                       <p style={{ fontSize: '16px' }}>
                                           {element.descrition}
