@@ -1,140 +1,115 @@
 {
-  "dados": [
-    {
-      "name": "CRUD",
-      "descri": "C: Create | R: Read | U: Update | D: Delete",
-      "url_git": "https://github.com/WeslleyIvis/CRUD-NodeJS",
-      "git_pages": null,
-      "tec": [
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "JavaScript",
-        "Nodejs",
-        "Express",
-        "Cors",
-        "Sequelize",
-        "Handlebars",
-        "MySQL",
-        "API"
-      ],
-      "img": "./img/nodecrud.png",
-      "logo": "./img/logos/node.png"
-    },
-    {
-      "name": "Download Music YT",
-      "descri": "App para fazer download de videos ou musicas do YouTube",
-      "url_git": "https://github.com/WeslleyIvis/App-Download-Music",
-      "git_pages": null,
-      "tec": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Nodejs",
-        "Express",
-        "Cors",
-        "Handlebars",
-        "API"
-      ],
-      "img": "./img/dlyoutube.png",
-      "logo": "./img/logos/node.png"
-    },
-    {
-      "name": "Canvas Prototypes",
-      "descri": "Prototypes for canvas",
-      "url_git": "https://github.com/WeslleyIvis/Prototypes-Canvas",
-      "git_pages": "https://weslleyivis.github.io/Prototypes-Canvas/",
-      "tec": ["TypeScript"],
-      "img": "./img/canvasproto.gif",
-      "logo": "./img/logos/ts.png"
-    },
-    {
-      "name": "Macro",
-      "descri": "Macro feito em Python, usando as bibliotecas PySimpleGUI para a interface gráfica e PyAutoGUI para o fundamento do programa. Esse macro consiste em apertar botões em tempo determinado pelo usuario, podendo ter até 4 botões em uso a o mesmo tempo, quando uma ação ocorre, é anúnciado no console do macro o botão precionado e a quantidade de vezes que essa ação já ocorreu",
-      "url_git": "https://github.com/WeslleyIvis/Macro",
-      "git_pages": null,
-      "tec": ["Python"],
-      "img": "./img/macro.png",
-      "logo": "./img/logos/python.png"
-    },
-    {
-      "name": "Portfolio",
-      "descri": "Você está navengando neste projeto neste momento. Este site ainda esta em desenvolvimento e espero terminar o mais rapido possivel.",
-      "url_git": "https://github.com/WeslleyIvis/Portfolio",
-      "git_pages": "https://weslleyivis.github.io/Portfolio/",
-      "tec": ["JavaScript", "React", "CSS", "HTML", "JSON", "API"],
-      "img": null,
-      "logo": "./img/logos/react.png"
-    },
-    {
-      "name": "Kirby Game",
-      "descri": "Este jogo foi desenvolvido com o auxilio de uma imersão da Alura, usando JS e um framework chamado P5",
-      "url_git": "https://weslleyivis.github.io/P5_Game/",
-      "git_pages": "https://weslleyivis.github.io/P5_Game/",
-      "tec": ["JavaScript", "P5"],
-      "img": "./img/kirbyGame.png",
-      "logo": "./img/logos/js.png"
-    },
-    {
-      "name": "Aniamis Fantasticos",
-      "descri": "Site desenvolvido com Auxilio do curso Origamid | JS, um excelente curso que me deu um grande empurrão em JS",
-      "url_git": "https://weslleyivis.github.io/SiteJS/",
-      "git_pages": "https://weslleyivis.github.io/SiteJS/",
-      "tec": ["JavaScript", "CSS", "HTML", "WebPack", "Babel"],
-      "img": "./img/sitejs.png",
-      "logo": "./img/logos/js.png"
-    },
-    {
-      "name": "Calculator",
-      "descri": "Essa calculadora foi meu primeiro projeto em JavaScript, quando eu não sabia muito bem como desenvolver em JS, foi bem desafiador e me fez perceber coisas simples que fazia com muita dificuldades.",
-      "url_git": "https://weslleyivis.github.io/Calculator/",
-      "git_pages": "https://weslleyivis.github.io/Calculator/",
-      "tec": ["JavaScript", "CSS", "HTML"],
-      "img": "./img/calculator.png",
-      "logo": "./img/logos/js.png"
-    },
-    {
-      "name": "Grid-Layout",
-      "descri": "Um Site desenvolvido apenas para entender como o display: Grid funciona e como utilziar da melhor forma",
-      "url_git": "https://weslleyivis.github.io/Grid-Layout/",
-      "git_pages": "https://weslleyivis.github.io/Grid-Layout/",
-      "tec": ["CSS", "HTML"],
-      "img": "./img/grid.png",
-      "logo": "./img/logos/css.png"
-    }
-  ],
-  "skills": [
-    {
-      "name": "Front-End",
-      "skill": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Jquery",
-        "React",
-        "Bootstrap",
-        "Sass"
-      ]
-    },
-    {
-      "name": "Back-End",
-      "skill": ["NodeJS", "Python", "Prisma", "Express", "Sequelize", "MySQL"]
-    },
-    {
-      "name": "Tools",
-      "skill": [
-        "TypeScript",
-        "Json",
-        "Npm",
-        "Yarn",
-        "Docker",
-        "Scrum",
-        "Rest API",
-        "PhotoShop",
-        "Corel Draw",
-        "Figma",
-        "Adobe XD"
-      ]
-    }
-  ]
+    "projects": [
+        {
+            "name": "Delivery project",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "/imagens/poke_api.png",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery das",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "/imagens/delivery.jpg",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery p",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "/imagens/phaserGame.png",
+            "git_url": "",
+            "web_link": ""
+        },
+        {
+            "name": "Delivery dasdsa",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus.",
+            "img": "/imagens/MacroPy.png",
+            "git_url": "",
+            "web_link": ""
+        }
+    ],
+    "skills": [
+        {
+            "skill": [
+                "HTML",
+                "JS",
+                "CSS3",
+                "ReactJS",
+                "Bootstrap",
+                "Jquery",
+                "VueJS",
+                "Vanilla",
+                "API",
+                "TypeScript",
+                "NodeJS",
+                "Express",
+                "JSON",
+                "MongoDB",
+                "Mongoose",
+                "MySQL",
+                "Python",
+                "Java",
+                "PostgreSQL",
+                "UX / UI designer"
+            ],
+            "tools": [
+                "VSCode",
+                "NetBeans",
+                "Figma",
+                "Adobe XD",
+                "PhotoShop",
+                "Corel Draw",
+                "Gimp",
+                "Pacote Office 365",
+                "Asesprite"
+            ]
+        }
+    ],
+    "exp": [
+        {
+            "title": "Dev. Full Stack",
+            "company": "Autonomo",
+            "date": "2023 - NOW",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Professor de informática (Freela)",
+            "company": "Microlins",
+            "date": "2023 - 2023",
+            "descrition": "Ministrava aulas para salas de até 10 alunos, com conteúdo de informática como, pacote office (365) básico à avançado e Windows."
+        },
+        {
+            "title": "Professor de informática (Freela)",
+            "company": "Logus",
+            "date": "2022 - 2022",
+            "descrition": "Ministrava aulas de designer para turmas com até trinta alunos, de diversas faixas etárias. com aulas de PhotoShop, Corel Drawn e Pacote Office (365)"
+        }
+    ],
+    "education": [
+        {
+            "title": "Ciência da Computação",
+            "company": "Universidade Cruzeiro do Sul",
+            "date": "2022 - Now",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Técncias de Algoritmos em (JS) ",
+            "company": "Origamid",
+            "date": "2022 - 2022",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Técnico em informática para internet",
+            "company": "Senai",
+            "date": "2020 - 2022",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        },
+        {
+            "title": "Manuntenção de micros",
+            "company": "Senai",
+            "date": "2019 - 2020",
+            "descrition": "Lorem ipsum dolor sit amet consectetur. Posuere nam eget id rhoncus maecenas diam tellus."
+        }
+    ]
 }
