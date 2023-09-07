@@ -26,9 +26,6 @@ const header = () => {
                         </a>
                     </div>
                 </div>
-                <div className="bg-image">
-                    <img alt="" />
-                </div>
             </section>
         </header>
     );
