@@ -1,5 +1,5 @@
 .footer-content {
-    background-color: black;
+    background-color: rgb(33, 147, 201);
     display: flex;
 }
 
@@ -16,7 +16,7 @@
     color: white;
 }
 
-.footer-items li{
+.footer-items li a{
     color: white;
     font-size: 12px;
     padding: 3px 0;
